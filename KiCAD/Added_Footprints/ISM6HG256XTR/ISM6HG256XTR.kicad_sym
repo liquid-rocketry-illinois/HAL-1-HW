@@ -180,7 +180,7 @@
 				)
 			)
 			(pin power_in line
-				(at 2.4496 -13.97 90)
+				(at 2.54 -13.97 90)
 				(length 2.54)
 				(name "GND"
 					(effects

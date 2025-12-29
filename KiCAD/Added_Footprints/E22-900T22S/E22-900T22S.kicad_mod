@@ -55,6 +55,17 @@
 	)
 	(attr smd)
 	(fp_rect
+		(start -8 -13)
+		(end 8 13)
+		(stroke
+			(width 0.1)
+			(type solid)
+		)
+		(fill no)
+		(layer "F.SilkS")
+		(uuid "e1277ae9-d667-47c8-b3a9-ec5c9f7ef41b")
+	)
+	(fp_rect
 		(start -6.5 9.25)
 		(end -3.5 12.25)
 		(stroke
@@ -62,7 +73,7 @@
 			(type solid)
 		)
 		(fill no)
-		(layer "Dwgs.User")
+		(layer "F.SilkS")
 		(uuid "97c26233-ecf1-4a65-8e82-675ebdd309a8")
 	)
 	(fp_poly
@@ -74,19 +85,8 @@
 			(type solid)
 		)
 		(fill no)
-		(layer "Dwgs.User")
+		(layer "F.SilkS")
 		(uuid "a352aa38-7ac9-4e63-8809-0e913ac8e49d")
-	)
-	(fp_rect
-		(start -8 -13)
-		(end 8 13)
-		(stroke
-			(width 0.1)
-			(type solid)
-		)
-		(fill no)
-		(layer "Edge.Cuts")
-		(uuid "e1277ae9-d667-47c8-b3a9-ec5c9f7ef41b")
 	)
 	(fp_rect
 		(start -9.45 -13.45)

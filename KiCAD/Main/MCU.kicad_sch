@@ -5469,6 +5469,17 @@
 		)
 		(uuid "02a074e9-5445-489d-9476-22363cb0c5c0")
 	)
+	(hierarchical_label "BMP390 (SPI4) CS3"
+		(shape output)
+		(at 78.74 128.27 180)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right)
+		)
+		(uuid "068d89ca-dc01-4fca-a8f9-80cb82fd5b80")
+	)
 	(hierarchical_label "SIMU MOSI"
 		(shape output)
 		(at 124.46 90.17 0)
@@ -5479,17 +5490,6 @@
 			(justify left)
 		)
 		(uuid "093f710f-dd3b-45ad-a1af-0423fa0c2b4c")
-	)
-	(hierarchical_label "SIMU CS2"
-		(shape output)
-		(at 78.74 85.09 180)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify right)
-		)
-		(uuid "09726faf-e167-4dcc-9e08-9ce41fff6368")
 	)
 	(hierarchical_label "GPS SDA"
 		(shape bidirectional)
@@ -5557,17 +5557,6 @@
 		)
 		(uuid "1afdbeb9-8ec8-4d96-a0d3-421c07e5986a")
 	)
-	(hierarchical_label "Servo2_Encoder"
-		(shape input)
-		(at 78.74 118.11 180)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify right)
-		)
-		(uuid "1ff52f36-6a53-40a0-99bb-71da66c84668")
-	)
 	(hierarchical_label "SD MOSI"
 		(shape output)
 		(at 124.46 59.69 0)
@@ -5600,28 +5589,6 @@
 			(justify left)
 		)
 		(uuid "2e7c0c8c-92d4-4bfb-9c25-9122e31bfc98")
-	)
-	(hierarchical_label "Servo1_DOut"
-		(shape output)
-		(at 78.74 110.49 180)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify right)
-		)
-		(uuid "3281e134-b242-459e-b3de-21e0c478ab6f")
-	)
-	(hierarchical_label "GPS_RESET"
-		(shape output)
-		(at 124.46 46.99 0)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify left)
-		)
-		(uuid "4177e1a0-8f21-459f-889c-cd42a180089f")
 	)
 	(hierarchical_label "SIMU MISO"
 		(shape input)
@@ -5656,17 +5623,6 @@
 		)
 		(uuid "44fc3172-432f-4636-b503-29a4c7729c30")
 	)
-	(hierarchical_label "Servo2_DOut"
-		(shape output)
-		(at 78.74 113.03 180)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify right)
-		)
-		(uuid "4e690c82-e723-4336-a72c-7232f2a09e4f")
-	)
 	(hierarchical_label "BMP390 (SPI4) CS2"
 		(shape output)
 		(at 78.74 130.81 180)
@@ -5677,17 +5633,6 @@
 			(justify right)
 		)
 		(uuid "5be16581-0c30-40b5-a01e-8e30b939404b")
-	)
-	(hierarchical_label "Servo1_Encoder"
-		(shape input)
-		(at 78.74 115.57 180)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify right)
-		)
-		(uuid "5c3a4bf4-6aa4-4bef-af70-1631b74b9eb2")
 	)
 	(hierarchical_label "SIMU CS3"
 		(shape output)
@@ -5744,6 +5689,17 @@
 		)
 		(uuid "71137cca-289f-4625-80d1-4eaeee5ce232")
 	)
+	(hierarchical_label "SIMU CS2"
+		(shape output)
+		(at 78.74 64.77 180)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right)
+		)
+		(uuid "7383929b-f791-432a-8e78-cee2b9528379")
+	)
 	(hierarchical_label "GPS SCL"
 		(shape output)
 		(at 78.74 138.43 180)
@@ -5776,6 +5732,17 @@
 			(justify left)
 		)
 		(uuid "7e7b7006-e668-4063-8d13-ddc96ead80d8")
+	)
+	(hierarchical_label "Servo1_Encoder"
+		(shape input)
+		(at 78.74 90.17 180)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right)
+		)
+		(uuid "7f626bdb-31ea-4c75-be58-3decfaaf3b0e")
 	)
 	(hierarchical_label "BNO085 CS"
 		(shape output)
@@ -5821,17 +5788,6 @@
 		)
 		(uuid "90453bbd-b0a2-428c-9c61-d03e4e9f6b18")
 	)
-	(hierarchical_label "BMP390 (SPI4) CS1"
-		(shape output)
-		(at 78.74 128.27 180)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify right)
-		)
-		(uuid "92288243-76da-4f94-a894-bb7b72c7dac0")
-	)
 	(hierarchical_label "BMP390 INT1"
 		(shape input)
 		(at 78.74 69.85 180)
@@ -5876,6 +5832,50 @@
 		)
 		(uuid "9ee1413e-c45c-4d79-8b45-333bd7abdc7e")
 	)
+	(hierarchical_label "Servo1_DOut"
+		(shape output)
+		(at 78.74 85.09 180)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right)
+		)
+		(uuid "9f45792b-013c-49d0-9e43-3cf1cfd76a94")
+	)
+	(hierarchical_label "Servo2_Encoder"
+		(shape input)
+		(at 78.74 92.71 180)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right)
+		)
+		(uuid "a21c266f-fd29-4114-b080-0d23168f86cf")
+	)
+	(hierarchical_label "GPS_RESET"
+		(shape output)
+		(at 78.74 120.65 180)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right)
+		)
+		(uuid "a418a4ac-3596-444b-8907-6d94485e00a1")
+	)
+	(hierarchical_label "Servo2_DOut"
+		(shape output)
+		(at 78.74 87.63 180)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right)
+		)
+		(uuid "a7ee3e2f-e4c5-4f57-a8c0-b056a38f67ad")
+	)
 	(hierarchical_label "BMP390 INT3"
 		(shape input)
 		(at 78.74 74.93 180)
@@ -5909,6 +5909,17 @@
 		)
 		(uuid "c1037ce2-047a-4d89-8d5c-bdd73d484690")
 	)
+	(hierarchical_label "BMP390 (SPI4) CS1"
+		(shape output)
+		(at 78.74 133.35 180)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right)
+		)
+		(uuid "c3d0778d-6966-414d-9522-591d723d6321")
+	)
 	(hierarchical_label "SHT41 SDA"
 		(shape bidirectional)
 		(at 124.46 113.03 0)
@@ -5930,17 +5941,6 @@
 			(justify left)
 		)
 		(uuid "cb6159e1-571a-4b05-b056-72e5e40f2694")
-	)
-	(hierarchical_label "BMP390 (SPI4) CS3"
-		(shape output)
-		(at 78.74 133.35 180)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify right)
-		)
-		(uuid "cc11c9c7-c124-477a-aee3-c73cac21ba2f")
 	)
 	(hierarchical_label "Drogue Eject Backup"
 		(shape output)
