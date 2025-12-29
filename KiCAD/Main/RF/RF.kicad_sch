@@ -1977,7 +1977,7 @@
 				)
 			)
 		)
-		(property "Footprint" "E22-900T22S:E22-900T22S"
+		(property "Footprint" "LRI:E22-900T22S"
 			(at 176.53 109.22 0)
 			(effects
 				(font

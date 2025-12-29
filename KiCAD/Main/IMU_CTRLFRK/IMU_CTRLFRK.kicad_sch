@@ -2180,7 +2180,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "BMM350:BGA9C40P3X3_128X128X50"
+		(property "Footprint" "LRI:BGA9C40P3X3_128X128X50"
 			(at 190.5 101.6 0)
 			(effects
 				(font
@@ -2700,7 +2700,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "ISM6HG256XTR:U_LGA-14L_2p5X3p0X0p83_STM"
+		(property "Footprint" "LRI:ISM6"
 			(at 127 101.6 0)
 			(effects
 				(font

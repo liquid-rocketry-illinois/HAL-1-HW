@@ -5797,7 +5797,7 @@
 				)
 			)
 		)
-		(property "Footprint" "TPS2121RUXR:IC_TPS2121RUXR"
+		(property "Footprint" "Package_DFN_QFN:Texas_VQFN-HR-12_2x2.5mm_P0.5mm_ThermalVias"
 			(at 194.31 54.61 0)
 			(effects
 				(font

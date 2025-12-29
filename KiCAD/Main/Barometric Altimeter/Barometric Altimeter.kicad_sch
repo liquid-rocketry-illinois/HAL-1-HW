@@ -1731,7 +1731,7 @@
 		(exclude_from_sim no)
 		(in_bom no)
 		(on_board yes)
-		(dnp no)
+		(dnp yes)
 		(fields_autoplaced yes)
 		(uuid "2a9919fd-55bd-449a-b33e-28a7e7818f1d")
 		(property "Reference" "JP3"
@@ -1752,7 +1752,7 @@
 				(justify right)
 			)
 		)
-		(property "Footprint" "Resistor_SMD:R_0603_1608Metric_Pad0.98x0.95mm_HandSolder"
+		(property "Footprint" "Jumper:SolderJumper-2_P1.3mm_Open_TrianglePad1.0x1.5mm"
 			(at 162.56 43.18 0)
 			(effects
 				(font
@@ -1886,7 +1886,7 @@
 				)
 			)
 		)
-		(property "Footprint" "BMP390L:XDCR_BMP390L"
+		(property "Footprint" "LRI:XDCR_BMP390L"
 			(at 104.14 107.95 0)
 			(effects
 				(font
@@ -2109,7 +2109,7 @@
 				)
 			)
 		)
-		(property "Footprint" "BMP390L:XDCR_BMP390L"
+		(property "Footprint" "LRI:XDCR_BMP390L"
 			(at 104.14 49.53 0)
 			(effects
 				(font
@@ -2402,7 +2402,7 @@
 				)
 			)
 		)
-		(property "Footprint" "BMP390L:XDCR_BMP390L"
+		(property "Footprint" "LRI:XDCR_BMP390L"
 			(at 104.14 166.37 0)
 			(effects
 				(font
