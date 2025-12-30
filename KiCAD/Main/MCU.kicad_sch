@@ -5491,6 +5491,17 @@
 		)
 		(uuid "093f710f-dd3b-45ad-a1af-0423fa0c2b4c")
 	)
+	(hierarchical_label "SIMU CS3"
+		(shape output)
+		(at 78.74 64.77 180)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right)
+		)
+		(uuid "0982e958-d64e-4cef-bfbe-590581b23216")
+	)
 	(hierarchical_label "GPS SDA"
 		(shape bidirectional)
 		(at 78.74 140.97 180)
@@ -5634,17 +5645,6 @@
 		)
 		(uuid "5be16581-0c30-40b5-a01e-8e30b939404b")
 	)
-	(hierarchical_label "SIMU CS3"
-		(shape output)
-		(at 124.46 87.63 0)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify left)
-		)
-		(uuid "5c5e81bb-1819-440e-a42b-39260fdb8465")
-	)
 	(hierarchical_label "DEBUG_JTMS-SWCLK"
 		(shape input)
 		(at 124.46 77.47 0)
@@ -5689,17 +5689,6 @@
 		)
 		(uuid "71137cca-289f-4625-80d1-4eaeee5ce232")
 	)
-	(hierarchical_label "SIMU CS2"
-		(shape output)
-		(at 78.74 64.77 180)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify right)
-		)
-		(uuid "7383929b-f791-432a-8e78-cee2b9528379")
-	)
 	(hierarchical_label "GPS SCL"
 		(shape output)
 		(at 78.74 138.43 180)
@@ -5732,6 +5721,17 @@
 			(justify left)
 		)
 		(uuid "7e7b7006-e668-4063-8d13-ddc96ead80d8")
+	)
+	(hierarchical_label "SIMU CS2"
+		(shape output)
+		(at 124.46 107.95 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left)
+		)
+		(uuid "7f2c798b-c7ba-4496-8309-8b7ac6e45f50")
 	)
 	(hierarchical_label "Servo1_Encoder"
 		(shape input)
