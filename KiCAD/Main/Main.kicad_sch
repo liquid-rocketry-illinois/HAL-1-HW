@@ -582,7 +582,7 @@
 	)
 	(wire
 		(pts
-			(xy 99.06 90.17) (xy 106.68 90.17)
+			(xy 96.52 121.92) (xy 106.68 121.92)
 		)
 		(stroke
 			(width 0)
@@ -822,6 +822,16 @@
 	)
 	(wire
 		(pts
+			(xy 102.87 85.09) (xy 106.68 85.09)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "50de481d-511f-47c3-8278-afbe48c79796")
+	)
+	(wire
+		(pts
 			(xy 102.87 180.34) (xy 106.68 180.34)
 		)
 		(stroke
@@ -862,7 +872,7 @@
 	)
 	(wire
 		(pts
-			(xy 99.06 92.71) (xy 106.68 92.71)
+			(xy 96.52 124.46) (xy 106.68 124.46)
 		)
 		(stroke
 			(width 0)
@@ -942,7 +952,7 @@
 	)
 	(wire
 		(pts
-			(xy 99.06 95.25) (xy 106.68 95.25)
+			(xy 96.52 127) (xy 106.68 127)
 		)
 		(stroke
 			(width 0)
@@ -969,6 +979,26 @@
 			(type default)
 		)
 		(uuid "734c374a-e239-40ff-b2aa-9155941a2e51")
+	)
+	(wire
+		(pts
+			(xy 102.87 87.63) (xy 106.68 87.63)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "784c8dd4-917a-474b-97b3-2d507e213d59")
+	)
+	(wire
+		(pts
+			(xy 102.87 82.55) (xy 106.68 82.55)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "7aa2a778-70bc-476c-85f7-757064db7061")
 	)
 	(wire
 		(pts
@@ -1301,7 +1331,7 @@
 		(uuid "f94d503f-eecf-4659-a1aa-0c45c6bf779c")
 	)
 	(label "~{RESET}"
-		(at 99.06 95.25 0)
+		(at 96.52 127 0)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -1331,7 +1361,7 @@
 		(uuid "b2dab130-b8b2-41aa-a1cb-8b7217fb1cbb")
 	)
 	(label "SWDIO"
-		(at 99.06 92.71 0)
+		(at 96.52 124.46 0)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -1351,7 +1381,7 @@
 		(uuid "e67d3459-15ba-41a7-8f8d-2bb2d3d502a5")
 	)
 	(label "SWCLK"
-		(at 99.06 90.17 0)
+		(at 96.52 121.92 0)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -2340,7 +2370,7 @@
 			)
 		)
 		(pin "DEBUG_JTMS-SWCLK" output
-			(at 106.68 90.17 180)
+			(at 106.68 121.92 180)
 			(uuid "a550d03d-8d95-48b2-b5dd-dcbbbd2c4322")
 			(effects
 				(font
@@ -2350,7 +2380,7 @@
 			)
 		)
 		(pin "DEBUG_JTMS-SWDIO" bidirectional
-			(at 106.68 92.71 180)
+			(at 106.68 124.46 180)
 			(uuid "fb81ff91-5135-4683-a476-c7bcb1d69861")
 			(effects
 				(font
@@ -2360,7 +2390,7 @@
 			)
 		)
 		(pin "~{RESET}" input
-			(at 106.68 95.25 180)
+			(at 106.68 127 180)
 			(uuid "5897c239-e32f-4d07-8707-4eeed272e88d")
 			(effects
 				(font
@@ -2412,6 +2442,36 @@
 		(pin "SCK2_ISM" input
 			(at 106.68 77.47 180)
 			(uuid "d7c55c7b-8583-4d04-82b4-534eeaaf455c")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(pin "INT_LIS" input
+			(at 106.68 82.55 180)
+			(uuid "cb47a484-56cf-4b6f-876a-6b364d5747fa")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(pin "SCL_LIS" output
+			(at 106.68 85.09 180)
+			(uuid "a42fb289-a99b-4073-b135-2c7ec1ddb394")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(pin "SDA_LIS" bidirectional
+			(at 106.68 87.63 180)
+			(uuid "36394422-4a46-4b4b-8c78-a4ab1d2c2694")
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2621,7 +2681,7 @@
 	)
 	(sheet
 		(at 85.09 66.04)
-		(size 17.78 13.97)
+		(size 17.78 22.86)
 		(exclude_from_sim no)
 		(in_bom yes)
 		(on_board yes)
@@ -2695,6 +2755,36 @@
 		(pin "ISM_SCK" input
 			(at 102.87 77.47 0)
 			(uuid "1bc8da21-36b0-488f-a863-f902727a88ba")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(pin "INT_LIS" output
+			(at 102.87 82.55 0)
+			(uuid "c328345b-f8e7-4ae8-be62-de863ad7c90c")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(pin "SCL_LIS" input
+			(at 102.87 85.09 0)
+			(uuid "229fe57c-04bd-42f8-9984-fc6d61a5fc73")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(pin "SDA_LIS" bidirectional
+			(at 102.87 87.63 0)
+			(uuid "dcb995c2-ce59-4d75-86cb-c534ddb3eb43")
 			(effects
 				(font
 					(size 1.27 1.27)

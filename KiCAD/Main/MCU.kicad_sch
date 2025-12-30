@@ -5543,6 +5543,28 @@
 		)
 		(uuid "1af6ad23-c9ca-463d-85a4-0452faa51622")
 	)
+	(hierarchical_label "SCL_LIS"
+		(shape output)
+		(at 124.46 100.33 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left)
+		)
+		(uuid "21d0a5ea-a308-4fa0-81af-edca73cf10c7")
+	)
+	(hierarchical_label "GPS SDA"
+		(shape bidirectional)
+		(at 124.46 107.95 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left)
+		)
+		(uuid "22d96fe6-2b68-466c-8868-fcc5968da101")
+	)
 	(hierarchical_label "SD MOSI"
 		(shape output)
 		(at 124.46 59.69 0)
@@ -5664,17 +5686,6 @@
 		)
 		(uuid "4759b7e4-40f3-4df0-bcec-7aa243d0050e")
 	)
-	(hierarchical_label "Radio AUX"
-		(shape input)
-		(at 124.46 107.95 0)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify left)
-		)
-		(uuid "49d90e1d-04cc-448a-b90d-47a283559628")
-	)
 	(hierarchical_label "Servo1_Encoder"
 		(shape input)
 		(at 124.46 133.35 0)
@@ -5685,6 +5696,17 @@
 			(justify left)
 		)
 		(uuid "4d3e49b4-3899-4bd9-97c4-2cb6beb19bc7")
+	)
+	(hierarchical_label "INT_LIS"
+		(shape input)
+		(at 124.46 95.25 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left)
+		)
+		(uuid "4f4a7fea-5001-44b3-92e9-6e37ea8acab2")
 	)
 	(hierarchical_label "SIMU1 INT"
 		(shape input)
@@ -5708,6 +5730,17 @@
 		)
 		(uuid "54999dd9-419e-45f7-b87e-184daf04abac")
 	)
+	(hierarchical_label "Radio AUX"
+		(shape input)
+		(at 78.74 72.39 180)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right)
+		)
+		(uuid "5687c61f-a1fc-4198-bbe4-7eb9c90f71ee")
+	)
 	(hierarchical_label "BMP390 (SPI4) CS1"
 		(shape output)
 		(at 78.74 128.27 180)
@@ -5718,17 +5751,6 @@
 			(justify right)
 		)
 		(uuid "5733e9b2-78fb-4523-bf9a-4ed2b6aa3f3b")
-	)
-	(hierarchical_label "GPS SCL"
-		(shape output)
-		(at 124.46 100.33 0)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify left)
-		)
-		(uuid "589a2f26-c9d8-4143-ad60-3347283fb611")
 	)
 	(hierarchical_label "DEBUG_JTMS-SWCLK"
 		(shape input)
@@ -5762,6 +5784,17 @@
 			(justify left)
 		)
 		(uuid "6bf4cc6d-4d80-4302-aac3-23a97adebff7")
+	)
+	(hierarchical_label "Radio RST"
+		(shape output)
+		(at 78.74 69.85 180)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right)
+		)
+		(uuid "70c2e57c-db97-4206-b00f-42689af86034")
 	)
 	(hierarchical_label "Servo2_Encoder"
 		(shape input)
@@ -5806,6 +5839,17 @@
 			(justify right)
 		)
 		(uuid "7d8028e6-8690-43c0-9023-1596ac2e7e6e")
+	)
+	(hierarchical_label "GPS SCL"
+		(shape output)
+		(at 124.46 105.41 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left)
+		)
+		(uuid "7ec09733-c39b-4c7f-8ae9-834996a785aa")
 	)
 	(hierarchical_label "SIMU CLK"
 		(shape output)
@@ -5861,17 +5905,6 @@
 			(justify left)
 		)
 		(uuid "99a6da1e-2e4f-456c-9b81-1dff3cc459f1")
-	)
-	(hierarchical_label "GPS SDA"
-		(shape bidirectional)
-		(at 124.46 102.87 0)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify left)
-		)
-		(uuid "ab0a272b-0413-4e7a-939e-ca2651305bd0")
 	)
 	(hierarchical_label "CS_ISM"
 		(shape input)
@@ -5983,6 +6016,17 @@
 		)
 		(uuid "d6701e87-7cef-4817-94d2-41e22cc580c3")
 	)
+	(hierarchical_label "SDA_LIS"
+		(shape bidirectional)
+		(at 124.46 102.87 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left)
+		)
+		(uuid "decfcb87-89d9-4659-bbd3-0c3b9126f4f1")
+	)
 	(hierarchical_label "~{RESET}"
 		(shape input)
 		(at 68.58 31.75 180)
@@ -5993,17 +6037,6 @@
 			(justify right)
 		)
 		(uuid "e1233373-0bda-41d2-a318-d5c6f4309524")
-	)
-	(hierarchical_label "Radio RST"
-		(shape output)
-		(at 124.46 105.41 0)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify left)
-		)
-		(uuid "e2baaf0b-d193-4986-9939-e20cdfde5f11")
 	)
 	(hierarchical_label "SIMU3 INT"
 		(shape input)
