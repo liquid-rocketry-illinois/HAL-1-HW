@@ -1368,7 +1368,7 @@
 		)
 		(uuid "0599b3e8-1547-4266-a702-1371f8454f3e")
 	)
-	(label "SWCLK"
+	(label "SWDIO"
 		(at 34.29 91.44 0)
 		(effects
 			(font
@@ -1376,17 +1376,7 @@
 			)
 			(justify left bottom)
 		)
-		(uuid "8c67a74d-edb1-4d68-9c29-87219fa4a3cd")
-	)
-	(label "SWDIO"
-		(at 34.29 96.52 0)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify left bottom)
-		)
-		(uuid "900b9cbc-3bc3-4365-bb8f-3b9dbe64d2cc")
+		(uuid "7dce545b-e9de-4578-8443-298de69dc658")
 	)
 	(label "~{RESET}"
 		(at 34.29 88.9 0)
@@ -1407,6 +1397,16 @@
 			(justify left bottom)
 		)
 		(uuid "c25275e3-a607-4ac8-bafa-2c9b9fe0fc24")
+	)
+	(label "SWCLK"
+		(at 34.29 96.52 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "dbf3a356-c72e-466f-9720-4c1b4055853a")
 	)
 	(label "SWCLK"
 		(at 99.06 90.17 0)
@@ -2073,26 +2073,6 @@
 				(justify left)
 			)
 		)
-		(pin "BNO085 CS" input
-			(at 106.68 69.85 180)
-			(uuid "75351a26-554e-452a-81d6-7d4276825f7b")
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(pin "BNO085 SCK" output
-			(at 106.68 77.47 180)
-			(uuid "9739ea69-7a6b-48be-ad59-c17b26e3c6b2")
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
 		(pin "GPS SCL" output
 			(at 168.91 140.97 0)
 			(uuid "1ab5749e-f661-4ca1-8fa6-22a47dd3f7ea")
@@ -2186,16 +2166,6 @@
 		(pin "BMP390 (SPI4) SCK" output
 			(at 106.68 177.8 180)
 			(uuid "69724130-9ec7-4d05-be02-ee893733e244")
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(pin "BNO085 INT" input
-			(at 106.68 67.31 180)
-			(uuid "b7c9cb65-2a05-4358-9c57-fc05af6eb6c3")
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2353,16 +2323,6 @@
 				(justify right)
 			)
 		)
-		(pin "BNO085 MISO" input
-			(at 106.68 72.39 180)
-			(uuid "c94d47b5-25c3-47c3-a416-04ac2f97a982")
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
 		(pin "BMP390 INT1" input
 			(at 106.68 162.56 180)
 			(uuid "2b4656fa-b117-46f6-9333-8f0d1b6e1191")
@@ -2443,16 +2403,6 @@
 				(justify right)
 			)
 		)
-		(pin "BNO085 MOSI" output
-			(at 106.68 74.93 180)
-			(uuid "4719f2ad-c3a6-4b7d-8543-fa894665221f")
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
 		(pin "DEBUG_JTMS-SWCLK" output
 			(at 106.68 90.17 180)
 			(uuid "a550d03d-8d95-48b2-b5dd-dcbbbd2c4322")
@@ -2476,6 +2426,56 @@
 		(pin "~{RESET}" input
 			(at 106.68 95.25 180)
 			(uuid "5897c239-e32f-4d07-8707-4eeed272e88d")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(pin "CS_ISM" input
+			(at 106.68 69.85 180)
+			(uuid "3fe73e18-c465-4649-9fe5-198fe70d32e2")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(pin "ISM_INT" input
+			(at 106.68 67.31 180)
+			(uuid "5f279ecb-5e3a-430b-bac9-732eb5ff0ca5")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(pin "MISO2_ISM" input
+			(at 106.68 72.39 180)
+			(uuid "25080e72-cdec-438a-90fb-ba32aedbd3f7")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(pin "MOSI2_ISM" input
+			(at 106.68 74.93 180)
+			(uuid "e31732ee-11cb-4bd7-b342-572ac8daeef6")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(pin "SCK2_ISM" input
+			(at 106.68 77.47 180)
+			(uuid "d7c55c7b-8583-4d04-82b4-534eeaaf455c")
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2716,9 +2716,9 @@
 				(justify left top)
 			)
 		)
-		(pin "BNO_CS" input
+		(pin "ISM_CS" input
 			(at 102.87 69.85 0)
-			(uuid "8c61ab7f-1d81-4fee-a263-eeb09f5470e6")
+			(uuid "7dcc41aa-6674-437e-938f-b67a489d97e4")
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2726,9 +2726,9 @@
 				(justify right)
 			)
 		)
-		(pin "BNO_INT" output
+		(pin "ISM_INT" input
 			(at 102.87 67.31 0)
-			(uuid "ff03e168-1bf0-45fd-b294-b28ece6bc146")
+			(uuid "53c7cdd2-0902-448d-987e-ed1300a734a0")
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2736,9 +2736,9 @@
 				(justify right)
 			)
 		)
-		(pin "BNO_MISO" output
+		(pin "ISM_MISO" input
 			(at 102.87 72.39 0)
-			(uuid "f951a247-1a61-4dd1-bb05-a5fdf6006e5f")
+			(uuid "093254ad-ba71-47f3-8b3e-e268fb7275d8")
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2746,9 +2746,9 @@
 				(justify right)
 			)
 		)
-		(pin "BNO_MOSI" input
+		(pin "ISM_MOSI" input
 			(at 102.87 74.93 0)
-			(uuid "3731152f-e932-473d-a352-ff52492ff8cc")
+			(uuid "2471dad2-c202-4a30-b4c8-b2c3a93381f8")
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2756,9 +2756,9 @@
 				(justify right)
 			)
 		)
-		(pin "BNO_SCK" input
+		(pin "ISM_SCK" input
 			(at 102.87 77.47 0)
-			(uuid "8d1ef659-6a23-4d32-9080-b21a64d53217")
+			(uuid "1bc8da21-36b0-488f-a863-f902727a88ba")
 			(effects
 				(font
 					(size 1.27 1.27)
