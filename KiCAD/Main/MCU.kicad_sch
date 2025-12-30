@@ -5491,17 +5491,6 @@
 		)
 		(uuid "093f710f-dd3b-45ad-a1af-0423fa0c2b4c")
 	)
-	(hierarchical_label "GPS SDA"
-		(shape bidirectional)
-		(at 78.74 140.97 180)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify right)
-		)
-		(uuid "0ef6f9bb-1f56-4b1f-b0cb-46e42f805e34")
-	)
 	(hierarchical_label "BNO085 SCK"
 		(shape output)
 		(at 124.46 118.11 0)
@@ -5634,6 +5623,17 @@
 		)
 		(uuid "44fc3172-432f-4636-b503-29a4c7729c30")
 	)
+	(hierarchical_label "GPS SCL"
+		(shape output)
+		(at 124.46 100.33 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left)
+		)
+		(uuid "589a2f26-c9d8-4143-ad60-3347283fb611")
+	)
 	(hierarchical_label "BMP390 (SPI4) CS2"
 		(shape output)
 		(at 78.74 130.81 180)
@@ -5710,17 +5710,6 @@
 			(justify right)
 		)
 		(uuid "7383929b-f791-432a-8e78-cee2b9528379")
-	)
-	(hierarchical_label "GPS SCL"
-		(shape output)
-		(at 78.74 138.43 180)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify right)
-		)
-		(uuid "7721594e-38c9-4355-b914-04d351c971db")
 	)
 	(hierarchical_label "SD_Det"
 		(shape input)
@@ -5875,6 +5864,17 @@
 			(justify right)
 		)
 		(uuid "a7ee3e2f-e4c5-4f57-a8c0-b056a38f67ad")
+	)
+	(hierarchical_label "GPS SDA"
+		(shape bidirectional)
+		(at 124.46 102.87 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left)
+		)
+		(uuid "ab0a272b-0413-4e7a-939e-ca2651305bd0")
 	)
 	(hierarchical_label "BMP390 INT3"
 		(shape input)
