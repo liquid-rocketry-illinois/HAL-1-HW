@@ -5590,6 +5590,17 @@
 		)
 		(uuid "2e7c0c8c-92d4-4bfb-9c25-9122e31bfc98")
 	)
+	(hierarchical_label "SD_MISO"
+		(shape input)
+		(at 124.46 57.15 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left)
+		)
+		(uuid "393e15da-e00b-4c76-949e-95fe6b396c53")
+	)
 	(hierarchical_label "SIMU MISO"
 		(shape input)
 		(at 124.46 156.21 0)
@@ -5765,17 +5776,6 @@
 			(justify left)
 		)
 		(uuid "8ad5dc73-3db5-4925-bfba-df42cfa876a6")
-	)
-	(hierarchical_label "SD_MISO"
-		(shape input)
-		(at 124.46 95.25 0)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify left)
-		)
-		(uuid "8d9b54e1-3579-496c-8ebe-597ce12129f3")
 	)
 	(hierarchical_label "Radio TX"
 		(shape output)
