@@ -4790,16 +4790,6 @@
 	)
 	(wire
 		(pts
-			(xy 124.46 62.23) (xy 134.62 62.23)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "3e57efcf-2f1a-40fb-b3e4-09bdf7d204f6")
-	)
-	(wire
-		(pts
 			(xy 55.88 52.07) (xy 59.69 52.07)
 		)
 		(stroke
@@ -4817,6 +4807,16 @@
 			(type default)
 		)
 		(uuid "479e9b8f-fdbf-4575-a80d-88ca9005b0fc")
+	)
+	(wire
+		(pts
+			(xy 66.04 143.51) (xy 78.74 143.51)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "4abc707f-7243-4c36-9dda-6b43d624ad49")
 	)
 	(wire
 		(pts
@@ -4947,6 +4947,16 @@
 			(type default)
 		)
 		(uuid "6035311c-57bd-4912-9613-44e888646cc5")
+	)
+	(wire
+		(pts
+			(xy 66.04 146.05) (xy 78.74 146.05)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "61600cc1-d998-4800-b361-59cc5a0816af")
 	)
 	(wire
 		(pts
@@ -5360,16 +5370,6 @@
 	)
 	(wire
 		(pts
-			(xy 124.46 151.13) (xy 138.43 151.13)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "fb192999-a8a0-4bbf-9cef-7e06496396bf")
-	)
-	(wire
-		(pts
 			(xy 109.22 21.59) (xy 106.68 21.59)
 		)
 		(stroke
@@ -5387,6 +5387,16 @@
 			(type default)
 		)
 		(uuid "fc2f52d7-f8e9-466f-bc05-858add2c3398")
+	)
+	(label "USER_BTN"
+		(at 66.04 146.05 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "1aaf2263-4a0f-4bed-a55e-a15a2bc3b18f")
 	)
 	(label "~{OSC_OUT}"
 		(at 69.85 57.15 0)
@@ -5428,15 +5438,15 @@
 		)
 		(uuid "6f676cea-3726-48c3-9612-b5116876db73")
 	)
-	(label "USER_BTN"
-		(at 134.62 62.23 180)
+	(label "USER_LED"
+		(at 66.04 143.51 0)
 		(effects
 			(font
 				(size 1.27 1.27)
 			)
-			(justify right bottom)
+			(justify left bottom)
 		)
-		(uuid "8067e3d6-5485-4fef-ba48-fe6f7b3a24b4")
+		(uuid "955708ce-750b-454a-a2ba-b9171b2d07eb")
 	)
 	(label "~{RESET}"
 		(at 238.76 129.54 180)
@@ -5468,16 +5478,6 @@
 		)
 		(uuid "c87936d7-1881-4349-bea3-89ac9fe36f58")
 	)
-	(label "USER_LED"
-		(at 138.43 151.13 180)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify right bottom)
-		)
-		(uuid "eaa59720-0eb1-40b9-abdf-7a0bb3ff36fd")
-	)
 	(label "BUZZER"
 		(at 231.14 63.5 0)
 		(effects
@@ -5487,17 +5487,6 @@
 			(justify left bottom)
 		)
 		(uuid "f4d54682-e38a-4279-bbcf-1366c664d605")
-	)
-	(hierarchical_label "Drogue Eject Backup"
-		(shape output)
-		(at 78.74 77.47 180)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify right)
-		)
-		(uuid "07f727f8-eaa4-4bc5-8948-d230013169e8")
 	)
 	(hierarchical_label "GPS_RESET"
 		(shape output)
@@ -5520,17 +5509,6 @@
 			(justify left)
 		)
 		(uuid "129f9140-a8ba-436e-84f6-9604264af81d")
-	)
-	(hierarchical_label "SIMU CS3"
-		(shape output)
-		(at 78.74 92.71 180)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify right)
-		)
-		(uuid "14f22804-3e5d-489f-9a51-3d4112fd4a62")
 	)
 	(hierarchical_label "USBC_D+"
 		(shape bidirectional)
@@ -5609,6 +5587,17 @@
 		)
 		(uuid "32730a9b-31d1-463a-ad57-532ebe5efa43")
 	)
+	(hierarchical_label "Servo1_DOut"
+		(shape output)
+		(at 124.46 146.05 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left)
+		)
+		(uuid "330557e8-db02-4e5b-b5d5-91299d21e3b2")
+	)
 	(hierarchical_label "Radio RX"
 		(shape input)
 		(at 78.74 64.77 180)
@@ -5619,17 +5608,6 @@
 			(justify right)
 		)
 		(uuid "386f524c-1cad-4444-97f1-3c02af6d07fd")
-	)
-	(hierarchical_label "SIMU CS1"
-		(shape output)
-		(at 78.74 82.55 180)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify right)
-		)
-		(uuid "3926235c-730e-4e7f-8b9c-fec3057a4ef9")
 	)
 	(hierarchical_label "SD_MISO"
 		(shape input)
@@ -5663,6 +5641,17 @@
 			(justify left)
 		)
 		(uuid "410b9caa-fa62-44f4-936f-b7f6ec77f16e")
+	)
+	(hierarchical_label "Servo2_DOut"
+		(shape output)
+		(at 124.46 143.51 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left)
+		)
+		(uuid "4252ce68-96a0-4fcb-958a-209fe8e11052")
 	)
 	(hierarchical_label "SHT41 SCL"
 		(shape output)
@@ -5708,16 +5697,16 @@
 		)
 		(uuid "4f4a7fea-5001-44b3-92e9-6e37ea8acab2")
 	)
-	(hierarchical_label "SIMU1 INT"
-		(shape input)
-		(at 124.46 90.17 0)
+	(hierarchical_label "SIMU CS3"
+		(shape output)
+		(at 78.74 82.55 180)
 		(effects
 			(font
 				(size 1.27 1.27)
 			)
-			(justify left)
+			(justify right)
 		)
-		(uuid "5065a88c-6c7b-4211-ba48-d61479f5ce97")
+		(uuid "5245c4cd-12fa-4b7f-a3ed-9acaac603dd2")
 	)
 	(hierarchical_label "SIMU MISO"
 		(shape input)
@@ -5752,6 +5741,17 @@
 		)
 		(uuid "5733e9b2-78fb-4523-bf9a-4ed2b6aa3f3b")
 	)
+	(hierarchical_label "SIMU1 INT"
+		(shape input)
+		(at 78.74 90.17 180)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right)
+		)
+		(uuid "5a88c318-da66-416b-99c8-c4ffaab700be")
+	)
 	(hierarchical_label "DEBUG_JTMS-SWCLK"
 		(shape input)
 		(at 124.46 77.47 0)
@@ -5762,6 +5762,17 @@
 			(justify left)
 		)
 		(uuid "5e34d22b-9a3d-47c5-81cf-eda45b02225a")
+	)
+	(hierarchical_label "Drogue Eject Main"
+		(shape output)
+		(at 124.46 64.77 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left)
+		)
+		(uuid "68ee579d-0bae-416e-b232-6a759aaecfe9")
 	)
 	(hierarchical_label "SD CS"
 		(shape output)
@@ -5818,28 +5829,6 @@
 		)
 		(uuid "79ac3a1a-d5f1-4ab5-8fc7-02aba6f27986")
 	)
-	(hierarchical_label "Servo2_DOut"
-		(shape output)
-		(at 124.46 146.05 0)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify left)
-		)
-		(uuid "7c71038d-e590-446a-aa69-80162b6432ee")
-	)
-	(hierarchical_label "Drogue Eject Main"
-		(shape output)
-		(at 78.74 74.93 180)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify right)
-		)
-		(uuid "7d8028e6-8690-43c0-9023-1596ac2e7e6e")
-	)
 	(hierarchical_label "GPS SCL"
 		(shape output)
 		(at 124.46 105.41 0)
@@ -5894,6 +5883,17 @@
 			(justify left)
 		)
 		(uuid "8ad5dc73-3db5-4925-bfba-df42cfa876a6")
+	)
+	(hierarchical_label "Main Eject"
+		(shape output)
+		(at 124.46 151.13 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left)
+		)
+		(uuid "8b1dfc9f-2069-4090-83fb-5fa428a1c02a")
 	)
 	(hierarchical_label "MOSI2_ISM"
 		(shape input)
@@ -5994,27 +5994,16 @@
 		)
 		(uuid "c6f4234f-e8e5-4781-9885-b6b8ec3cbbe2")
 	)
-	(hierarchical_label "Main Eject"
+	(hierarchical_label "SIMU CS1"
 		(shape output)
-		(at 78.74 80.01 180)
+		(at 78.74 92.71 180)
 		(effects
 			(font
 				(size 1.27 1.27)
 			)
 			(justify right)
 		)
-		(uuid "d53ba530-6c52-4500-abca-e1b902b4e14b")
-	)
-	(hierarchical_label "Servo1_DOut"
-		(shape output)
-		(at 124.46 143.51 0)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify left)
-		)
-		(uuid "d6701e87-7cef-4817-94d2-41e22cc580c3")
+		(uuid "d750599e-74fc-49b0-b3f8-8ea60b7eccb9")
 	)
 	(hierarchical_label "SDA_LIS"
 		(shape bidirectional)
@@ -6038,16 +6027,27 @@
 		)
 		(uuid "e1233373-0bda-41d2-a318-d5c6f4309524")
 	)
-	(hierarchical_label "SIMU3 INT"
-		(shape input)
-		(at 78.74 90.17 180)
+	(hierarchical_label "Drogue Eject Backup"
+		(shape output)
+		(at 124.46 62.23 0)
 		(effects
 			(font
 				(size 1.27 1.27)
 			)
-			(justify right)
+			(justify left)
 		)
-		(uuid "e7fdb667-89d4-443d-8d22-3a21cdecd8eb")
+		(uuid "e3e2a092-3a66-4dfc-8e67-12f3ab5284d9")
+	)
+	(hierarchical_label "SIMU3 INT"
+		(shape input)
+		(at 124.46 90.17 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left)
+		)
+		(uuid "f2e08847-2f4c-4420-bd14-bdf965305983")
 	)
 	(hierarchical_label "BMP390 INT1"
 		(shape input)
@@ -7461,15 +7461,15 @@
 	(symbol
 		(lib_id "Device:C")
 		(at 194.31 25.4 0)
+		(mirror y)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
 		(on_board yes)
 		(dnp no)
-		(fields_autoplaced yes)
 		(uuid "40c99171-82bd-456e-902c-c0a204675091")
 		(property "Reference" "C14"
-			(at 198.12 24.13 0)
+			(at 190.5 24.13 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -7478,7 +7478,7 @@
 			)
 		)
 		(property "Value" "4.7u"
-			(at 198.12 26.67 0)
+			(at 190.5 26.67 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -7487,7 +7487,7 @@
 			)
 		)
 		(property "Footprint" "Capacitor_SMD:C_0603_1608Metric"
-			(at 195.2752 29.21 0)
+			(at 193.3448 29.21 0)
 			(effects
 				(font
 					(size 1.27 1.27)

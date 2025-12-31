@@ -4219,6 +4219,16 @@
 			(embedded_fonts no)
 		)
 	)
+	(text "D2 is marked as DNF, \nsince it is placed on \nthe back and will be \nhand soldered instead \nof assembled"
+		(exclude_from_sim no)
+		(at 151.384 140.208 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+		)
+		(uuid "9c681fe2-becc-4244-bbd9-fabc07eba743")
+	)
 	(junction
 		(at 215.9 72.39)
 		(diameter 0)
@@ -6865,7 +6875,7 @@
 		(exclude_from_sim no)
 		(in_bom yes)
 		(on_board yes)
-		(dnp no)
+		(dnp yes)
 		(fields_autoplaced yes)
 		(uuid "57df2070-cd65-4361-b021-a1c56de1a02f")
 		(property "Reference" "D2"
