@@ -715,6 +715,16 @@
 	)
 	(wire
 		(pts
+			(xy 102.87 147.32) (xy 106.68 147.32)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "12093338-1839-4b03-ad54-7eb901ee784a")
+	)
+	(wire
+		(pts
 			(xy 102.87 149.86) (xy 106.68 149.86)
 		)
 		(stroke
@@ -745,7 +755,7 @@
 	)
 	(wire
 		(pts
-			(xy 102.87 140.97) (xy 106.68 140.97)
+			(xy 102.87 138.43) (xy 106.68 138.43)
 		)
 		(stroke
 			(width 0)
@@ -855,6 +865,16 @@
 	)
 	(wire
 		(pts
+			(xy 102.87 144.78) (xy 106.68 144.78)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "33b6cb4e-3c64-49f4-ba02-9c9fb6ddfa8f")
+	)
+	(wire
+		(pts
 			(xy 168.91 92.71) (xy 172.72 92.71)
 		)
 		(stroke
@@ -902,16 +922,6 @@
 			(type default)
 		)
 		(uuid "48c049c7-542e-4c39-b83f-6c8b011d5f6b")
-	)
-	(wire
-		(pts
-			(xy 102.87 85.09) (xy 106.68 85.09)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "50de481d-511f-47c3-8278-afbe48c79796")
 	)
 	(wire
 		(pts
@@ -1062,26 +1072,6 @@
 			(type default)
 		)
 		(uuid "734c374a-e239-40ff-b2aa-9155941a2e51")
-	)
-	(wire
-		(pts
-			(xy 102.87 87.63) (xy 106.68 87.63)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "784c8dd4-917a-474b-97b3-2d507e213d59")
-	)
-	(wire
-		(pts
-			(xy 102.87 82.55) (xy 106.68 82.55)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "7aa2a778-70bc-476c-85f7-757064db7061")
 	)
 	(wire
 		(pts
@@ -1295,7 +1285,7 @@
 	)
 	(wire
 		(pts
-			(xy 102.87 143.51) (xy 106.68 143.51)
+			(xy 102.87 140.97) (xy 106.68 140.97)
 		)
 		(stroke
 			(width 0)
@@ -2519,7 +2509,7 @@
 			)
 		)
 		(pin "SHT41 SCL" output
-			(at 106.68 143.51 180)
+			(at 106.68 140.97 180)
 			(uuid "c736d5a0-4f0e-4478-8200-1d3a0db81fdf")
 			(effects
 				(font
@@ -2529,7 +2519,7 @@
 			)
 		)
 		(pin "SHT41 SDA" bidirectional
-			(at 106.68 140.97 180)
+			(at 106.68 138.43 180)
 			(uuid "3d9da983-fc30-4cef-a69f-a3a6e8fcd73a")
 			(effects
 				(font
@@ -2788,9 +2778,9 @@
 				(justify left)
 			)
 		)
-		(pin "INT_LIS" input
-			(at 106.68 82.55 180)
-			(uuid "cb47a484-56cf-4b6f-876a-6b364d5747fa")
+		(pin "M0_Radio" output
+			(at 106.68 147.32 180)
+			(uuid "bc017d80-eb22-4803-9a81-5ef1f4583989")
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2798,19 +2788,9 @@
 				(justify left)
 			)
 		)
-		(pin "SCL_LIS" output
-			(at 106.68 85.09 180)
-			(uuid "a42fb289-a99b-4073-b135-2c7ec1ddb394")
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(pin "SDA_LIS" bidirectional
-			(at 106.68 87.63 180)
-			(uuid "36394422-4a46-4b4b-8c78-a4ab1d2c2694")
+		(pin "M1_Radio" output
+			(at 106.68 144.78 180)
+			(uuid "4be3a595-dd25-41e2-83dd-54ae2406e0f3")
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2827,7 +2807,7 @@
 		)
 	)
 	(sheet
-		(at 87.63 139.7)
+		(at 87.63 137.16)
 		(size 15.24 5.08)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -2842,7 +2822,7 @@
 		)
 		(uuid "896d693a-fbbd-418a-ac8a-f8826c549ae5")
 		(property "Sheetname" "SHT41"
-			(at 81.026 141.732 0)
+			(at 81.026 139.192 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2851,7 +2831,7 @@
 			)
 		)
 		(property "Sheetfile" "SHT41.kicad_sch"
-			(at 66.04 142.748 0)
+			(at 66.04 140.208 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2860,7 +2840,7 @@
 			)
 		)
 		(pin "SHT41 SCL" input
-			(at 102.87 143.51 0)
+			(at 102.87 140.97 0)
 			(uuid "750adc2d-f285-4074-a33f-c4948a17b09c")
 			(effects
 				(font
@@ -2870,7 +2850,7 @@
 			)
 		)
 		(pin "SHT41 SDA" bidirectional
-			(at 102.87 140.97 0)
+			(at 102.87 138.43 0)
 			(uuid "d3a1511f-c733-4126-bc9b-2446993ed71c")
 			(effects
 				(font
@@ -3020,7 +3000,7 @@
 	)
 	(sheet
 		(at 85.09 66.04)
-		(size 17.78 22.86)
+		(size 17.78 12.7)
 		(exclude_from_sim no)
 		(in_bom yes)
 		(on_board yes)
@@ -3094,36 +3074,6 @@
 		(pin "ISM_SCK" input
 			(at 102.87 77.47 0)
 			(uuid "1bc8da21-36b0-488f-a863-f902727a88ba")
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify right)
-			)
-		)
-		(pin "INT_LIS" output
-			(at 102.87 82.55 0)
-			(uuid "c328345b-f8e7-4ae8-be62-de863ad7c90c")
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify right)
-			)
-		)
-		(pin "SCL_LIS" input
-			(at 102.87 85.09 0)
-			(uuid "229fe57c-04bd-42f8-9984-fc6d61a5fc73")
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify right)
-			)
-		)
-		(pin "SDA_LIS" bidirectional
-			(at 102.87 87.63 0)
-			(uuid "dcb995c2-ce59-4d75-86cb-c534ddb3eb43")
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3254,8 +3204,8 @@
 		)
 	)
 	(sheet
-		(at 87.63 146.05)
-		(size 15.24 12.7)
+		(at 87.63 143.51)
+		(size 15.24 15.24)
 		(exclude_from_sim no)
 		(in_bom yes)
 		(on_board yes)
@@ -3269,7 +3219,7 @@
 		)
 		(uuid "cea653c8-bb92-4989-ba48-a3585205b361")
 		(property "Sheetname" "RF"
-			(at 82.804 151.892 0)
+			(at 82.804 149.352 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3278,7 +3228,7 @@
 			)
 		)
 		(property "Sheetfile" "RF/RF.kicad_sch"
-			(at 65.786 153.162 0)
+			(at 65.786 150.622 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3319,6 +3269,26 @@
 		(pin "TX_Radio" output
 			(at 102.87 152.4 0)
 			(uuid "31caef1f-c299-4523-a6eb-2a3b1f4ad2b0")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(pin "M0_Radio" input
+			(at 102.87 147.32 0)
+			(uuid "30796965-3dff-4848-b798-c45df2567273")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(pin "M1_Radio" input
+			(at 102.87 144.78 0)
+			(uuid "74f2b7b2-43c1-4b14-8202-dc5d961504fe")
 			(effects
 				(font
 					(size 1.27 1.27)

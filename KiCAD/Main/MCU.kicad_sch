@@ -130,6 +130,113 @@
 			)
 			(embedded_fonts no)
 		)
+		(symbol "Connector:TestPoint"
+			(pin_numbers
+				(hide yes)
+			)
+			(pin_names
+				(offset 0.762)
+				(hide yes)
+			)
+			(exclude_from_sim no)
+			(in_bom yes)
+			(on_board yes)
+			(property "Reference" "TP"
+				(at 0 6.858 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Value" "TestPoint"
+				(at 0 5.08 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Footprint" ""
+				(at 5.08 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Datasheet" "~"
+				(at 5.08 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Description" "test point"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "ki_keywords" "test point tp"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "ki_fp_filters" "Pin* Test*"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(symbol "TestPoint_0_1"
+				(circle
+					(center 0 3.302)
+					(radius 0.762)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+			)
+			(symbol "TestPoint_1_1"
+				(pin passive line
+					(at 0 0 90)
+					(length 2.54)
+					(name "1"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "1"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+			)
+			(embedded_fonts no)
+		)
 		(symbol "Device:Buzzer"
 			(pin_names
 				(offset 0.0254)
@@ -4465,6 +4572,12 @@
 		(uuid "639100db-481f-42a6-aa81-249c9cfebee6")
 	)
 	(junction
+		(at 43.18 39.37)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "64d529f3-8110-47d7-941d-b2b38357b183")
+	)
+	(junction
 		(at 55.88 49.53)
 		(diameter 0)
 		(color 0 0 0 0)
@@ -4840,6 +4953,16 @@
 	)
 	(wire
 		(pts
+			(xy 43.18 39.37) (xy 45.72 39.37)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "52188006-a02d-4b4c-ad95-40c0020424f9")
+	)
+	(wire
+		(pts
 			(xy 92.71 26.67) (xy 93.98 26.67)
 		)
 		(stroke
@@ -5100,7 +5223,7 @@
 	)
 	(wire
 		(pts
-			(xy 39.37 39.37) (xy 45.72 39.37)
+			(xy 39.37 39.37) (xy 43.18 39.37)
 		)
 		(stroke
 			(width 0)
@@ -5488,6 +5611,17 @@
 		)
 		(uuid "f4d54682-e38a-4279-bbcf-1366c664d605")
 	)
+	(hierarchical_label "M0_Radio"
+		(shape output)
+		(at 78.74 74.93 180)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right)
+		)
+		(uuid "011e6fc0-02ed-439b-a641-f91fd62aca2e")
+	)
 	(hierarchical_label "GPS_RESET"
 		(shape output)
 		(at 124.46 97.79 0)
@@ -5520,17 +5654,6 @@
 			(justify left)
 		)
 		(uuid "1af6ad23-c9ca-463d-85a4-0452faa51622")
-	)
-	(hierarchical_label "SCL_LIS"
-		(shape output)
-		(at 124.46 100.33 0)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify left)
-		)
-		(uuid "21d0a5ea-a308-4fa0-81af-edca73cf10c7")
 	)
 	(hierarchical_label "GPS SDA"
 		(shape bidirectional)
@@ -5566,15 +5689,15 @@
 		(uuid "3133e01f-eaa0-4ba3-8be6-35cb88a450c0")
 	)
 	(hierarchical_label "Radio TX"
-		(shape output)
-		(at 78.74 67.31 180)
+		(shape input)
+		(at 78.74 64.77 180)
 		(effects
 			(font
 				(size 1.27 1.27)
 			)
 			(justify right)
 		)
-		(uuid "31bfc493-cf8c-45f3-b320-bfbc47eddbb6")
+		(uuid "31382e2f-c718-42a7-8d18-815bbaea40ec")
 	)
 	(hierarchical_label "BMP390 INT3"
 		(shape input)
@@ -5597,17 +5720,6 @@
 			(justify left)
 		)
 		(uuid "330557e8-db02-4e5b-b5d5-91299d21e3b2")
-	)
-	(hierarchical_label "Radio RX"
-		(shape input)
-		(at 78.74 64.77 180)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify right)
-		)
-		(uuid "386f524c-1cad-4444-97f1-3c02af6d07fd")
 	)
 	(hierarchical_label "SD_MISO"
 		(shape input)
@@ -5686,17 +5798,6 @@
 		)
 		(uuid "4d3e49b4-3899-4bd9-97c4-2cb6beb19bc7")
 	)
-	(hierarchical_label "INT_LIS"
-		(shape input)
-		(at 124.46 95.25 0)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify left)
-		)
-		(uuid "4f4a7fea-5001-44b3-92e9-6e37ea8acab2")
-	)
 	(hierarchical_label "SIMU CS3"
 		(shape output)
 		(at 78.74 82.55 180)
@@ -5740,6 +5841,17 @@
 			(justify right)
 		)
 		(uuid "5733e9b2-78fb-4523-bf9a-4ed2b6aa3f3b")
+	)
+	(hierarchical_label "Radio RX"
+		(shape output)
+		(at 78.74 67.31 180)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right)
+		)
+		(uuid "5806ea77-30df-4a58-9b80-eaf234525ecd")
 	)
 	(hierarchical_label "SIMU1 INT"
 		(shape input)
@@ -5895,6 +6007,17 @@
 		)
 		(uuid "8b1dfc9f-2069-4090-83fb-5fa428a1c02a")
 	)
+	(hierarchical_label "M1_Radio"
+		(shape output)
+		(at 78.74 77.47 180)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right)
+		)
+		(uuid "958d8e4a-4d22-4371-9347-565e8e5749cd")
+	)
 	(hierarchical_label "MOSI2_ISM"
 		(shape input)
 		(at 124.46 158.75 0)
@@ -6004,17 +6127,6 @@
 			(justify right)
 		)
 		(uuid "d750599e-74fc-49b0-b3f8-8ea60b7eccb9")
-	)
-	(hierarchical_label "SDA_LIS"
-		(shape bidirectional)
-		(at 124.46 102.87 0)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify left)
-		)
-		(uuid "decfcb87-89d9-4659-bbd3-0c3b9126f4f1")
 	)
 	(hierarchical_label "~{RESET}"
 		(shape input)
@@ -6401,6 +6513,73 @@
 			(project "Main"
 				(path "/bbb10697-a5dd-43b8-9c6f-4c5919cf3463/370a154e-a6dd-4f7c-9f86-560fca4820f6"
 					(reference "R29")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Connector:TestPoint")
+		(at 43.18 39.37 180)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "0c24ddeb-16c9-4001-8c70-b18f9c404292")
+		(property "Reference" "TP16"
+			(at 45.72 41.4019 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(property "Value" "TestPoint"
+			(at 45.72 43.9419 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(property "Footprint" "TestPoint:TestPoint_THTPad_1.5x1.5mm_Drill0.7mm"
+			(at 38.1 39.37 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 38.1 39.37 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "test point"
+			(at 43.18 39.37 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "901e7546-30db-4442-aa7f-6947f9223894")
+		)
+		(instances
+			(project ""
+				(path "/bbb10697-a5dd-43b8-9c6f-4c5919cf3463/370a154e-a6dd-4f7c-9f86-560fca4820f6"
+					(reference "TP16")
 					(unit 1)
 				)
 			)
