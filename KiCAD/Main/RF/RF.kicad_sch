@@ -1721,7 +1721,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "TestPoint:TestPoint_THTPad_1.5x1.5mm_Drill0.7mm"
+		(property "Footprint" "TestPoint:TestPoint_Pad_D1.0mm"
 			(at 142.24 109.22 0)
 			(effects
 				(font
@@ -2310,7 +2310,7 @@
 				)
 			)
 		)
-		(property "Footprint" "TestPoint:TestPoint_THTPad_1.5x1.5mm_Drill0.7mm"
+		(property "Footprint" "TestPoint:TestPoint_Pad_D1.0mm"
 			(at 154.94 83.82 0)
 			(effects
 				(font
@@ -2377,7 +2377,7 @@
 				(justify right)
 			)
 		)
-		(property "Footprint" "TestPoint:TestPoint_THTPad_1.5x1.5mm_Drill0.7mm"
+		(property "Footprint" "TestPoint:TestPoint_Pad_D1.0mm"
 			(at 127 111.76 0)
 			(effects
 				(font
