@@ -4551,6 +4551,16 @@
 			(embedded_fonts no)
 		)
 	)
+	(text "Debugging UART"
+		(exclude_from_sim no)
+		(at 151.638 38.608 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+		)
+		(uuid "6f47a29d-f72d-4235-91a5-739c55debc56")
+	)
 	(junction
 		(at 104.14 21.59)
 		(diameter 0)
@@ -9012,7 +9022,7 @@
 		(at 151.13 44.45 0)
 		(unit 1)
 		(exclude_from_sim no)
-		(in_bom yes)
+		(in_bom no)
 		(on_board yes)
 		(dnp no)
 		(fields_autoplaced yes)

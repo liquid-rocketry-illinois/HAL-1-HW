@@ -2935,7 +2935,7 @@
 			(fill
 				(type none)
 			)
-			(uuid 18e63c31-b48d-4161-afe9-b59dedc1a5d1)
+			(uuid 34d5d4e7-abd1-40df-bcc1-873bd7ada040)
 		)
 	)
 	(rule_area
@@ -2950,7 +2950,7 @@
 			(fill
 				(type none)
 			)
-			(uuid 43a4d95d-77af-459c-9e07-7baed697f864)
+			(uuid 4bcb247e-47d2-4270-87c9-c05f85585f50)
 		)
 	)
 	(rule_area
@@ -2965,7 +2965,7 @@
 			(fill
 				(type none)
 			)
-			(uuid ccd36453-2dce-48fc-a4ed-6b479aa121fd)
+			(uuid 93b0a1bc-04c4-492f-811e-b0425c80bf92)
 		)
 	)
 	(rule_area
@@ -2980,7 +2980,7 @@
 			(fill
 				(type none)
 			)
-			(uuid eb1ce8d3-18fc-4386-8896-ad82f8a9dff3)
+			(uuid f3d5870c-4bde-4345-83b7-8a437e423f0c)
 		)
 	)
 	(symbol
