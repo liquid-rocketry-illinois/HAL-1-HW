@@ -1,0 +1,43 @@
+{
+	"sources" : 
+	[
+		{
+			"file" : "C:/Users/admin/OneDrive/Desktop/LRI/HAL-1-HW/temp_H755_Test/H755_ServoTest/build/Debug/CMakeFiles/H755_ServoTest_CM4"
+		},
+		{
+			"file" : "C:/Users/admin/OneDrive/Desktop/LRI/HAL-1-HW/temp_H755_Test/H755_ServoTest/build/Debug/CMakeFiles/H755_ServoTest_CM4.rule"
+		},
+		{
+			"file" : "C:/Users/admin/OneDrive/Desktop/LRI/HAL-1-HW/temp_H755_Test/H755_ServoTest/build/Debug/CMakeFiles/H755_ServoTest_CM4-complete.rule"
+		},
+		{
+			"file" : "C:/Users/admin/OneDrive/Desktop/LRI/HAL-1-HW/temp_H755_Test/H755_ServoTest/build/Debug/CM4/src/H755_ServoTest_CM4-stamp/H755_ServoTest_CM4-build.rule"
+		},
+		{
+			"file" : "C:/Users/admin/OneDrive/Desktop/LRI/HAL-1-HW/temp_H755_Test/H755_ServoTest/build/Debug/CM4/src/H755_ServoTest_CM4-stamp/H755_ServoTest_CM4-configure.rule"
+		},
+		{
+			"file" : "C:/Users/admin/OneDrive/Desktop/LRI/HAL-1-HW/temp_H755_Test/H755_ServoTest/build/Debug/CM4/src/H755_ServoTest_CM4-stamp/H755_ServoTest_CM4-download.rule"
+		},
+		{
+			"file" : "C:/Users/admin/OneDrive/Desktop/LRI/HAL-1-HW/temp_H755_Test/H755_ServoTest/build/Debug/CM4/src/H755_ServoTest_CM4-stamp/H755_ServoTest_CM4-install.rule"
+		},
+		{
+			"file" : "C:/Users/admin/OneDrive/Desktop/LRI/HAL-1-HW/temp_H755_Test/H755_ServoTest/build/Debug/CM4/src/H755_ServoTest_CM4-stamp/H755_ServoTest_CM4-mkdir.rule"
+		},
+		{
+			"file" : "C:/Users/admin/OneDrive/Desktop/LRI/HAL-1-HW/temp_H755_Test/H755_ServoTest/build/Debug/CM4/src/H755_ServoTest_CM4-stamp/H755_ServoTest_CM4-patch.rule"
+		},
+		{
+			"file" : "C:/Users/admin/OneDrive/Desktop/LRI/HAL-1-HW/temp_H755_Test/H755_ServoTest/build/Debug/CM4/src/H755_ServoTest_CM4-stamp/H755_ServoTest_CM4-update.rule"
+		}
+	],
+	"target" : 
+	{
+		"labels" : 
+		[
+			"H755_ServoTest_CM4"
+		],
+		"name" : "H755_ServoTest_CM4"
+	}
+}

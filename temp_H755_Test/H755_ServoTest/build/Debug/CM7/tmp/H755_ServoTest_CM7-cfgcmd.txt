@@ -1,0 +1,1 @@
+cmd='cube-cmake;-DCMAKE_EXPORT_COMPILE_COMMANDS=ON;-DCMAKE_TOOLCHAIN_FILE=C:/Users/admin/OneDrive/Desktop/LRI/HAL-1-HW/temp_H755_Test/H755_ServoTest/gcc-arm-none-eabi.cmake;-DCMAKE_BUILD_TYPE=Debug;-GNinja;-S;<SOURCE_DIR><SOURCE_SUBDIR>;-B;<BINARY_DIR>'
