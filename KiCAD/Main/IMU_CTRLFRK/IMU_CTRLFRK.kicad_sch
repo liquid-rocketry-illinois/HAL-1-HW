@@ -1785,7 +1785,7 @@
 		(uuid "91ce13be-e614-4fcc-9ca8-a831c3e28c62")
 	)
 	(hierarchical_label "ISM_INT"
-		(shape input)
+		(shape output)
 		(at 90.17 107.95 180)
 		(effects
 			(font

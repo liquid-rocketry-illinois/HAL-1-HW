@@ -651,6 +651,16 @@
 			(embedded_fonts no)
 		)
 	)
+	(text "Hand-soldered"
+		(exclude_from_sim no)
+		(at 112.522 93.218 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+		)
+		(uuid "2601819e-4399-4737-8bc9-f477ff08e4e9")
+	)
 	(junction
 		(at 127 76.2)
 		(diameter 0)
@@ -1010,9 +1020,9 @@
 		(at 124.46 83.82 0)
 		(unit 1)
 		(exclude_from_sim no)
-		(in_bom yes)
+		(in_bom no)
 		(on_board yes)
-		(dnp no)
+		(dnp yes)
 		(fields_autoplaced yes)
 		(uuid "1f1865f4-352a-4a33-975f-78afe10182f4")
 		(property "Reference" "U17"

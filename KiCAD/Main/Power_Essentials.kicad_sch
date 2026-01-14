@@ -5041,7 +5041,7 @@
 	)
 	(wire
 		(pts
-			(xy 236.22 123.19) (xy 236.22 128.27)
+			(xy 236.22 114.3) (xy 236.22 128.27)
 		)
 		(stroke
 			(width 0)
@@ -5241,7 +5241,7 @@
 	)
 	(wire
 		(pts
-			(xy 231.14 114.3) (xy 231.14 120.65)
+			(xy 231.14 114.3) (xy 231.14 128.27)
 		)
 		(stroke
 			(width 0)
@@ -5281,23 +5281,13 @@
 	)
 	(wire
 		(pts
-			(xy 233.68 114.3) (xy 233.68 118.11)
+			(xy 233.68 114.3) (xy 233.68 128.27)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
 		(uuid "6f4e7fc1-ed39-49a8-8fab-767a5b516bda")
-	)
-	(wire
-		(pts
-			(xy 233.68 125.73) (xy 233.68 128.27)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "6fc522db-6d21-47d3-bcc7-ba50f80bdb6c")
 	)
 	(wire
 		(pts
@@ -5458,16 +5448,6 @@
 			(type default)
 		)
 		(uuid "9ae61f8f-e8bf-4cbe-bc74-ef7161384816")
-	)
-	(wire
-		(pts
-			(xy 236.22 114.3) (xy 236.22 115.57)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "9da68fb9-825d-41cb-bede-80b3b8a612be")
 	)
 	(wire
 		(pts
@@ -7470,75 +7450,6 @@
 		)
 	)
 	(symbol
-		(lib_id "Diode:1N5820")
-		(at 231.14 124.46 90)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom no)
-		(on_board yes)
-		(dnp yes)
-		(uuid "64246330-2829-4a68-8d1e-a28345902d49")
-		(property "Reference" "D3"
-			(at 225.298 119.634 90)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify right)
-			)
-		)
-		(property "Value" "1N5820"
-			(at 225.298 122.174 90)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify right)
-			)
-		)
-		(property "Footprint" "Diode_THT:D_DO-201AD_P15.24mm_Horizontal"
-			(at 235.585 124.46 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" "http://www.vishay.com/docs/88526/1n5820.pdf"
-			(at 231.14 124.46 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" "20V 3A Schottky Barrier Rectifier Diode, DO-201AD"
-			(at 231.14 124.46 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "1"
-			(uuid "d666ec4a-9dab-42e6-89c7-4b7b99644743")
-		)
-		(pin "2"
-			(uuid "82b8704e-663d-4786-b07c-596d7cb1babb")
-		)
-		(instances
-			(project ""
-				(path "/bbb10697-a5dd-43b8-9c6f-4c5919cf3463/14279dde-67ce-4c97-8b3d-bab2d340dd8b"
-					(reference "D3")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
 		(lib_id "Regulator_Switching:LM2596S-3.3")
 		(at 166.37 111.76 0)
 		(mirror y)
@@ -7755,75 +7666,6 @@
 			(project "Main"
 				(path "/bbb10697-a5dd-43b8-9c6f-4c5919cf3463/14279dde-67ce-4c97-8b3d-bab2d340dd8b"
 					(reference "#PWR073")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "Diode:1N5820")
-		(at 236.22 119.38 90)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom no)
-		(on_board yes)
-		(dnp yes)
-		(uuid "80edfac5-a7cb-4810-9262-5da2348dfc59")
-		(property "Reference" "D5"
-			(at 237.744 117.094 90)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify right)
-			)
-		)
-		(property "Value" "1N5820"
-			(at 237.744 119.634 90)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify right)
-			)
-		)
-		(property "Footprint" "Diode_THT:D_DO-201AD_P15.24mm_Horizontal"
-			(at 240.665 119.38 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" "http://www.vishay.com/docs/88526/1n5820.pdf"
-			(at 236.22 119.38 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" "20V 3A Schottky Barrier Rectifier Diode, DO-201AD"
-			(at 236.22 119.38 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "1"
-			(uuid "4b72f26b-4789-4cc9-b270-16e049243fac")
-		)
-		(pin "2"
-			(uuid "f16d7e47-ca32-43d7-b7a2-13c64cfd9ec6")
-		)
-		(instances
-			(project "Main"
-				(path "/bbb10697-a5dd-43b8-9c6f-4c5919cf3463/14279dde-67ce-4c97-8b3d-bab2d340dd8b"
-					(reference "D5")
 					(unit 1)
 				)
 			)
@@ -9204,75 +9046,6 @@
 			(project ""
 				(path "/bbb10697-a5dd-43b8-9c6f-4c5919cf3463/14279dde-67ce-4c97-8b3d-bab2d340dd8b"
 					(reference "D7")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "Diode:1N5820")
-		(at 233.68 121.92 90)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom no)
-		(on_board yes)
-		(dnp yes)
-		(uuid "da2c2880-df7d-4f10-ba29-85a7804de158")
-		(property "Reference" "D4"
-			(at 228.854 109.982 90)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify right)
-			)
-		)
-		(property "Value" "1N5820"
-			(at 228.854 112.522 90)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify right)
-			)
-		)
-		(property "Footprint" "Diode_THT:D_DO-201AD_P15.24mm_Horizontal"
-			(at 238.125 121.92 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" "http://www.vishay.com/docs/88526/1n5820.pdf"
-			(at 233.68 121.92 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" "20V 3A Schottky Barrier Rectifier Diode, DO-201AD"
-			(at 233.68 121.92 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "1"
-			(uuid "02ac17bb-b015-4ba5-94d7-e9857e8acdf2")
-		)
-		(pin "2"
-			(uuid "e05a3868-79c4-4eb7-a4f7-17bf8b17aa9c")
-		)
-		(instances
-			(project "Main"
-				(path "/bbb10697-a5dd-43b8-9c6f-4c5919cf3463/14279dde-67ce-4c97-8b3d-bab2d340dd8b"
-					(reference "D4")
 					(unit 1)
 				)
 			)
