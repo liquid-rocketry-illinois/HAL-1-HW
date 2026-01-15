@@ -145,33 +145,17 @@ Error_Handler();
   MX_GPIO_Init();
   MX_TIM4_Init();
   /* USER CODE BEGIN 2 */
-
-    // --- Start PWM ---
-    HAL_TIM_PWM_Start(&htim4, TIM_CHANNEL_1);
-
     // --- Main loop ---
     while (1)
     {
-        static TIM_OC_InitTypeDef uConfigOC = {TIM_OCMODE_PWM1, 1500, TIM_OCPOLARITY_HIGH, 0, TIM_OCFAST_DISABLE, 0, 0};
-        // Example: sweep servo from 0° to 180° every 2 seconds
-        for (uint16_t pulse = 1000; pulse <= 2000; pulse += 10)
-        {
-            uConfigOC.Pulse = pulse;
-            HAL_TIM_PWM_ConfigChannel(&htim4, &uConfigOC, TIM_CHANNEL_1);
-            HAL_TIM_PWM_Start(&htim4, TIM_CHANNEL_1);
-            HAL_Delay(20);
-        }
-        for (uint16_t pulse = 2000; pulse >= 1000; pulse -= 10)
-        {
-            uConfigOC.Pulse = pulse;
-            HAL_TIM_PWM_ConfigChannel(&htim4, &uConfigOC, TIM_CHANNEL_1);
-            HAL_TIM_PWM_Start(&htim4, TIM_CHANNEL_1);
-            HAL_Delay(20);
-        }
+        break;
     }
 
-  HAL_TIM_PWM_Start(&htim4, TIM_CHANNEL_1);
 
+
+  TIM4->ARR = 1000L;
+  TIM4->CCR1 = 0L;
+  HAL_TIM_PWM_Start(&htim4, TIM_CHANNEL_1);
   /* USER CODE END 2 */
 
   /* Initialize leds */
@@ -197,7 +181,11 @@ Error_Handler();
   /* USER CODE BEGIN WHILE */
   while (1)
   {
-
+    for (uint16_t i = 0; i <= 1000; i+=100)
+    {
+      TIM4->CCR1 = i;
+      HAL_Delay(5);
+    }
     /* USER CODE END WHILE */
 
     /* USER CODE BEGIN 3 */
