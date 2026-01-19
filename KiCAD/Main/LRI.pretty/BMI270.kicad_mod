@@ -1,5 +1,5 @@
 
-(footprint XDCR_BMI270 (layer F.Cu) (tedit 69295C4A)
+(footprint XDCR_BMI270 (layer F.Cu) (tedit 696EAF48)
   (descr "")
   (attr smd)
   (fp_text reference REF** (at -0.008 -2.0314 0) (layer F.SilkS)

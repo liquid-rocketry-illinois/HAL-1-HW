@@ -2962,7 +2962,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "LRI:ISM6"
+		(property "Footprint" "LRI:ISM6HG256XTR"
 			(at 110.49 104.14 0)
 			(effects
 				(font
