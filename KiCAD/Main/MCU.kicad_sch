@@ -8118,23 +8118,14 @@
 	(symbol
 		(lib_id "Device:Buzzer")
 		(at 261.62 80.01 0)
+		(mirror x)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
 		(on_board yes)
 		(dnp no)
-		(fields_autoplaced yes)
 		(uuid "552045d8-2ee6-431a-a409-93ec05ea4bb0")
 		(property "Reference" "BZ1"
-			(at 265.43 78.74 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Value" "Buzzer"
 			(at 265.43 81.28 0)
 			(effects
 				(font
@@ -8143,8 +8134,17 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "Buzzer_Beeper:MagneticBuzzer_PUI_SMT-1028-T-2-R"
-			(at 260.985 77.47 90)
+		(property "Value" "Buzzer"
+			(at 265.43 78.74 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" "Buzzer_Beeper:Buzzer_12x9.5RM7.6"
+			(at 260.985 82.55 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -8153,7 +8153,7 @@
 			)
 		)
 		(property "Datasheet" "~"
-			(at 260.985 77.47 90)
+			(at 260.985 82.55 90)
 			(effects
 				(font
 					(size 1.27 1.27)

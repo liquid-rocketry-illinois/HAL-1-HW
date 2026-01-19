@@ -1106,6 +1106,16 @@
 			(embedded_fonts no)
 		)
 	)
+	(text "Hand Soldered\n"
+		(exclude_from_sim no)
+		(at 129.286 93.98 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+		)
+		(uuid "16f796ea-8692-46ff-a054-056d8f4ee9dd")
+	)
 	(junction
 		(at 165.1 87.63)
 		(diameter 0)

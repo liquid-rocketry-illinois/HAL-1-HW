@@ -1,4 +1,4 @@
-25609995145500638
+25622370870603626
 ADG5234BRUZ
 SOP65P640X120-20N
 
@@ -67920,6 +67920,48 @@ Yellow 5381 Series LED
 0
 2
 2
+LRI
+BGA9C40P3X3_128X128X50
+9-BGA, collapsing, 0.40 mm pitch, 1.28 X 1.28 X 0.50 mm body <p>9-pin collapsing BGA package with 0.40 mm col pitch and 0.40 mm row pitch with body size 1.28 X 1.28 X 0.50 mm</p>
+
+0
+9
+9
+LRI
+E22-900T22S
+
+
+0
+22
+22
+LRI
+ISM6
+
+ISM6HG256XTR 
+0
+14
+14
+LRI
+LOGO
+
+
+0
+0
+0
+LRI
+XDCR_BMI270
+
+
+0
+14
+14
+LRI
+XDCR_BMP390L
+
+
+0
+10
+10
 MCP9600-I_MX
 QFN65P500X500X100-21N
 
@@ -102696,3 +102738,10 @@ Varistor VF
 0
 2
 2
+temp
+1P3jn1GVe0o663oW61IFHCrs1ryg256Phj2hFYreBh484vDH7kl
+
+
+0
+0
+0

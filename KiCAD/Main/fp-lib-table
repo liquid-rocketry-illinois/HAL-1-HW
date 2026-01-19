@@ -10,4 +10,6 @@
   (lib (name "MCP9600-I_MX")(type "KiCad")(uri "C:/Users/admin/OneDrive/Desktop/LRI/HAL-1-HW/KiCAD/Added_Footprints/MCP9600-I_MX")(options "")(descr ""))
   (lib (name "TPS2121RUXR")(type "KiCad")(uri "C:/Users/admin/OneDrive/Desktop/LRI/HAL-1-HW/KiCAD/Added_Footprints/TPS2121RUXR")(options "")(descr ""))
   (lib (name "E22-900T22S")(type "KiCad")(uri "C:/Users/admin/OneDrive/Desktop/LRI/HAL-1-HW/KiCAD/Added_Footprints/E22-900T22S")(options "")(descr ""))
+  (lib (name "LRI")(type "KiCad")(uri "${KIPRJMOD}/LRI.pretty")(options "")(descr ""))
+  (lib (name "temp")(type "KiCad")(uri "C:/Users/admin/Downloads/temp")(options "")(descr ""))
 )
