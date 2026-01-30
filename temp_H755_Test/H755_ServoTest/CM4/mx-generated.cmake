@@ -6,8 +6,7 @@ set(MX_Defines_Syms
 	USE_HAL_DRIVER 
 	STM32H755xx 
 	USE_PWR_DIRECT_SMPS_SUPPLY 
-	USE_NUCLEO_144 
-	STM32_THREAD_SAFE_STRATEGY=2
+	USE_NUCLEO_144
     $<$<CONFIG:Debug>:DEBUG>
 )
 # STM32CubeMX generated include paths
@@ -22,7 +21,6 @@ set(MX_Include_Dirs
 # STM32CubeMX generated application sources
 set(MX_Application_Src
     ${CMAKE_CURRENT_SOURCE_DIR}/Core/Src/main.c
-    ${CMAKE_CURRENT_SOURCE_DIR}/Core/Src/tim.c
     ${CMAKE_CURRENT_SOURCE_DIR}/Core/Src/stm32h7xx_it.c
     ${CMAKE_CURRENT_SOURCE_DIR}/Core/Src/stm32h7xx_hal_msp.c
     ${CMAKE_CURRENT_SOURCE_DIR}/Core/Src/sysmem.c

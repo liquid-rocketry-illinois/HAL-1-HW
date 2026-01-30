@@ -128,7 +128,7 @@
       "selected_by": [
         {
           "name": "st-arm-clangd",
-          "version": "19.1.2+st.3"
+          "version": "^19.1.2+st.3"
         }
       ]
     },
@@ -139,7 +139,7 @@
       "selected_by": [
         {
           "name": "st-arm-clangd",
-          "version": "19.1.2+st.3"
+          "version": "^19.1.2+st.3"
         }
       ]
     },
@@ -150,7 +150,7 @@
       "selected_by": [
         {
           "name": "st-arm-clangd",
-          "version": "19.1.2+st.3"
+          "version": "^19.1.2+st.3"
         }
       ]
     }

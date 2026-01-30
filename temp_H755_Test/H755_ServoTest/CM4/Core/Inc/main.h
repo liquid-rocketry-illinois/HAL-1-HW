@@ -60,8 +60,6 @@ void Error_Handler(void);
 /* USER CODE END EFP */
 
 /* Private defines -----------------------------------------------------------*/
-#define Servo_PWMOut_Pin GPIO_PIN_12
-#define Servo_PWMOut_GPIO_Port GPIOD
 
 /* USER CODE BEGIN Private defines */
 
