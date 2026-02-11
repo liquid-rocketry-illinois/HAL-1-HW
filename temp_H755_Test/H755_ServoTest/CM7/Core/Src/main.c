@@ -140,8 +140,8 @@ Error_Handler();
   MX_TIM2_Init();
   /* USER CODE BEGIN 2 */
 
-  int32_t CH1_DC = 0;
   HAL_TIM_PWM_Start(&htim2, TIM_CHANNEL_1);
+  HAL_TIM_PWM_Start(&htim4, TIM_CHANNEL_1);
 
   /* USER CODE END 2 */
 
@@ -168,20 +168,18 @@ Error_Handler();
   /* USER CODE BEGIN WHILE */
   while (1)
   {
-    while(CH1_DC < 32767)
-    	{
-    	    TIM2->CCR1 = CH1_DC;
-    	    CH1_DC += 70;
-    	    HAL_Delay(1);
-    	}
-    	while(CH1_DC > 0)
-    	{
-    	    TIM2->CCR1 = CH1_DC;
-    	    CH1_DC -= 70;
-    	    HAL_Delay(1);
-    	}
+    for (int i = 0; i < 65535; i++){
+      __HAL_TIM_SET_COMPARE(&htim2, TIM_CHANNEL_1, i);
+      __HAL_TIM_SET_COMPARE(&htim4, TIM_CHANNEL_1, i);
+      HAL_Delay(5);
+    }
+    for (int i = 65535; i < 0; i++){
+      __HAL_TIM_SET_COMPARE(&htim2, TIM_CHANNEL_1, i);
+      __HAL_TIM_SET_COMPARE(&htim4, TIM_CHANNEL_1, i);
+      HAL_Delay(5);
+    }
     /* USER CODE END WHILE */
-
+    
     /* USER CODE BEGIN 3 */
   }
   /* USER CODE END 3 */
@@ -221,7 +219,7 @@ void SystemClock_Config(void)
   RCC_OscInitStruct.PLL.PLLR = 2;
   RCC_OscInitStruct.PLL.PLLRGE = RCC_PLL1VCIRANGE_3;
   RCC_OscInitStruct.PLL.PLLVCOSEL = RCC_PLL1VCOWIDE;
-  RCC_OscInitStruct.PLL.PLLFRACN = 1024;
+  RCC_OscInitStruct.PLL.PLLFRACN = 0;
   if (HAL_RCC_OscConfig(&RCC_OscInitStruct) != HAL_OK)
   {
     Error_Handler();
