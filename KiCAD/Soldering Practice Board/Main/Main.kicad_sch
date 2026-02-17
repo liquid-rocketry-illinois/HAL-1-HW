@@ -1873,6 +1873,48 @@
 			)
 		)
 	)
+	(sheet
+		(at 43.18 111.76)
+		(size 12.7 3.81)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(stroke
+			(width 0.1524)
+			(type solid)
+		)
+		(fill
+			(color 0 0 0 0.0000)
+		)
+		(uuid "b0651c7b-0449-4934-81f7-134581c9ca34")
+		(property "Sheetname" "STLSM6DS3TR-C"
+			(at 43.18 111.0484 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left bottom)
+			)
+		)
+		(property "Sheetfile" "STLSM6DS3TR-C.kicad_sch"
+			(at 43.18 116.1546 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left top)
+			)
+		)
+		(instances
+			(project "Main"
+				(path "/4f1abb7e-5ebf-459c-b427-2e7d0c6488f6"
+					(page "3")
+				)
+			)
+		)
+	)
 	(sheet_instances
 		(path "/"
 			(page "1")
