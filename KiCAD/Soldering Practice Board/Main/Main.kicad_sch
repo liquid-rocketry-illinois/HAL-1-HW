@@ -1831,6 +1831,48 @@
 			)
 		)
 	)
+	(sheet
+		(at 163.83 77.47)
+		(size 12.7 24.13)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(stroke
+			(width 0.1524)
+			(type solid)
+		)
+		(fill
+			(color 0 0 0 0.0000)
+		)
+		(uuid "41da4d40-9530-4b0a-94de-2cd3d71fdc96")
+		(property "Sheetname" "BMI270"
+			(at 163.83 76.7584 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left bottom)
+			)
+		)
+		(property "Sheetfile" "BMI270.kicad_sch"
+			(at 163.83 102.1846 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left top)
+			)
+		)
+		(instances
+			(project "Main"
+				(path "/4f1abb7e-5ebf-459c-b427-2e7d0c6488f6"
+					(page "2")
+				)
+			)
+		)
+	)
 	(sheet_instances
 		(path "/"
 			(page "1")
