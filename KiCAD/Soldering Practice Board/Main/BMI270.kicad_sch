@@ -2,9 +2,148 @@
 	(version 20250114)
 	(generator "eeschema")
 	(generator_version "9.0")
-	(uuid "d86a9e48-7928-4f82-91b5-c6467df8c902")
+	(uuid "396cd08a-9914-437c-a433-34cb4b0b13c8")
 	(paper "A4")
 	(lib_symbols
+		(symbol "Device:C"
+			(pin_numbers
+				(hide yes)
+			)
+			(pin_names
+				(offset 0.254)
+			)
+			(exclude_from_sim no)
+			(in_bom yes)
+			(on_board yes)
+			(property "Reference" "C"
+				(at 0.635 2.54 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(justify left)
+				)
+			)
+			(property "Value" "C"
+				(at 0.635 -2.54 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(justify left)
+				)
+			)
+			(property "Footprint" ""
+				(at 0.9652 -3.81 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Datasheet" "~"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Description" "Unpolarized capacitor"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "ki_keywords" "cap capacitor"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "ki_fp_filters" "C_*"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(symbol "C_0_1"
+				(polyline
+					(pts
+						(xy -2.032 0.762) (xy 2.032 0.762)
+					)
+					(stroke
+						(width 0.508)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy -2.032 -0.762) (xy 2.032 -0.762)
+					)
+					(stroke
+						(width 0.508)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+			)
+			(symbol "C_1_1"
+				(pin passive line
+					(at 0 3.81 270)
+					(length 2.794)
+					(name "~"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "1"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin passive line
+					(at 0 -3.81 90)
+					(length 2.794)
+					(name "~"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "2"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+			)
+			(embedded_fonts no)
+		)
 		(symbol "Sensor_Motion:BMI160"
 			(exclude_from_sim no)
 			(in_bom yes)
@@ -578,7 +717,7 @@
 	)
 	(text "Often, you won't need to use some \npins. If this is the case, check\nif the modules wants you to leave\nit unconnected, grounded, or flagged\nas no-connect. Refer to a datasheet!\nFor the BMI260, ASDx and ASCx are for \nauxiliary sensors, used to bring the \n6-axis IMU up to 9-axis (For certain\napplications). For simplicity, we will\nnot use it here. OCSB and OSDO refer to\npins meant for a device specific function,\nit seems to be Bosch-specific and we don't\nreally need it. Its function is probably\nirrelevant to our aerospace applications."
 		(exclude_from_sim no)
-		(at 160.782 96.012 0)
+		(at 160.782 97.79 0)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -595,6 +734,26 @@
 			)
 		)
 		(uuid "3a748fd6-cde6-41ad-90b0-a47449548276")
+	)
+	(text "MOSI (Master Out Slave In).\nThis corresponds to SDx, and according\nto the BMI260 datasheet is the data \ninput for SPI. In I2C mode (See LIS2DH12)\nSDx is the data input and output, as the \ndatasheet says."
+		(exclude_from_sim no)
+		(at 59.69 93.726 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+		)
+		(uuid "65ec8a79-3897-43d0-bd6f-294f3cc1fb79")
+	)
+	(text "These two capacitors are called decoupling\ncapacitors. They smooth the voltage input \ninto the sensor and ensure that no noise\naffects the voltage input. This is a safety \nmeasure, but a quite necessary one.\nThe value of each capacitor is not always\nlisted on the datasheets, so when in doubt,\nuse 100n as the capacitance value. Connect\nthe in parallel with sensor input voltages,\nand reference datasheet wiring diagrams when\nprovided for you. They should have one end \nat a voltage and the other directly to ground."
+		(exclude_from_sim no)
+		(at 221.996 106.934 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+		)
+		(uuid "6bbe48b9-b5e0-4eec-bb58-d411822d9dd7")
 	)
 	(text "VDD is often 3V3 (3.3 volts input).\nYou should however consult your\nsensor's datasheet to determine the\nrequired voltage."
 		(exclude_from_sim no)
@@ -637,6 +796,16 @@
 		)
 		(uuid "b6503655-219c-45f8-82a7-863971460939")
 	)
+	(text "SCK (Sensor Clock)\nThe clock pin establishes a constant \nstream of data, a simple square wave.\nThis square wave is how the sensor times\ndata input and output, synchronizing the\noperation and data input/output signals."
+		(exclude_from_sim no)
+		(at 57.404 111.76 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+		)
+		(uuid "d2b7c9f4-9afe-4818-a99e-a88625d31744")
+	)
 	(text "The CS pin is Chip Select. It \nturns on and off the sensor, \npreventing data output when\nyou don't need to. This is very\nuseful when you have multiple \nsensors connected to the same \nSPI data lines (See Note 1)."
 		(exclude_from_sim no)
 		(at 97.79 113.03 0)
@@ -649,7 +818,7 @@
 	)
 	(text "For the vast majority of the time,\nyou won't need to have two ground \nsources for data and power. If you\ndo, first ask, \"why is this necessary?\""
 		(exclude_from_sim no)
-		(at 148.082 122.174 0)
+		(at 179.324 124.714 0)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -658,10 +827,22 @@
 		(uuid "f1f7dd5a-d343-4573-bff1-79178e495d00")
 	)
 	(junction
-		(at 128.27 118.11)
+		(at 127 76.2)
 		(diameter 0)
 		(color 0 0 0 0)
-		(uuid "2b5f3100-26c8-49bd-93dd-ca79e6eeca72")
+		(uuid "3868a2ba-9da2-4933-9a83-85a7b64a22e2")
+	)
+	(junction
+		(at 195.58 115.57)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "7b173f01-33bd-4f5e-bc80-a7b681e8202f")
+	)
+	(junction
+		(at 129.54 78.74)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "8bdb1cca-5ed6-43f3-b7e8-88a731c213f4")
 	)
 	(junction
 		(at 129.54 73.66)
@@ -669,15 +850,47 @@
 		(color 0 0 0 0)
 		(uuid "98d85c5f-c46b-42b7-8ea9-5c2291c3c976")
 	)
+	(junction
+		(at 198.12 118.11)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "a9815a68-d592-4b52-9df9-25aaa753a539")
+	)
+	(junction
+		(at 195.58 118.11)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "cc8ac32a-5349-4e2e-bfa5-10b52765c3d8")
+	)
 	(wire
 		(pts
-			(xy 128.27 119.38) (xy 128.27 118.11)
+			(xy 198.12 120.65) (xy 198.12 118.11)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
 		(uuid "0f323773-890f-490b-8774-9390222655ac")
+	)
+	(wire
+		(pts
+			(xy 198.12 118.11) (xy 199.39 118.11)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "1703344a-64ce-43d1-a78a-3a33ccc9fca9")
+	)
+	(wire
+		(pts
+			(xy 110.49 129.54) (xy 113.03 129.54)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "1d060727-4155-4d76-a16a-307c427662bd")
 	)
 	(wire
 		(pts
@@ -688,16 +901,6 @@
 			(type default)
 		)
 		(uuid "26ada6ff-8f1c-458c-a49e-d7f2b7a0272f")
-	)
-	(wire
-		(pts
-			(xy 128.27 118.11) (xy 129.54 118.11)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "27023c1a-7f0f-4707-b58e-b5faef66de16")
 	)
 	(wire
 		(pts
@@ -741,7 +944,7 @@
 	)
 	(wire
 		(pts
-			(xy 127 118.11) (xy 128.27 118.11)
+			(xy 127 118.11) (xy 195.58 118.11)
 		)
 		(stroke
 			(width 0)
@@ -751,13 +954,33 @@
 	)
 	(wire
 		(pts
-			(xy 129.54 73.66) (xy 129.54 91.44)
+			(xy 199.39 76.2) (xy 199.39 86.36)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "5daf460a-3306-49e1-aa78-40fd6cecb7d8")
+	)
+	(wire
+		(pts
+			(xy 129.54 73.66) (xy 129.54 78.74)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
 		(uuid "63c1e695-92a2-4e19-8186-c04d5c7bd062")
+	)
+	(wire
+		(pts
+			(xy 129.54 78.74) (xy 129.54 91.44)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "6d6b8fd5-17a3-499a-87a3-97e63b4b14c3")
 	)
 	(wire
 		(pts
@@ -771,13 +994,13 @@
 	)
 	(wire
 		(pts
-			(xy 127 91.44) (xy 127 73.66)
+			(xy 195.58 78.74) (xy 195.58 101.6)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
-		(uuid "86eaf4c4-167d-4141-843a-c0bcd41bea41")
+		(uuid "8584a469-2a26-4e70-920b-81083b99f982")
 	)
 	(wire
 		(pts
@@ -801,6 +1024,16 @@
 	)
 	(wire
 		(pts
+			(xy 127 76.2) (xy 199.39 76.2)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "b4f7150d-81d6-4b8e-8678-d53959f2b67c")
+	)
+	(wire
+		(pts
 			(xy 76.2 119.38) (xy 78.74 119.38)
 		)
 		(stroke
@@ -811,13 +1044,43 @@
 	)
 	(wire
 		(pts
-			(xy 129.54 118.11) (xy 129.54 114.3)
+			(xy 127 76.2) (xy 127 73.66)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
-		(uuid "d01d5f0b-d208-4cd8-9854-eb695b2f0fb5")
+		(uuid "bff83b5c-d58e-47a6-b0df-64e40109affc")
+	)
+	(wire
+		(pts
+			(xy 127 76.2) (xy 127 91.44)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "cdd05a64-cf96-40d8-a7b9-a78d77f3ae3e")
+	)
+	(wire
+		(pts
+			(xy 195.58 118.11) (xy 198.12 118.11)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "cddb28e0-536e-4555-a16d-05d51df6b1aa")
+	)
+	(wire
+		(pts
+			(xy 195.58 115.57) (xy 195.58 118.11)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "d6fdc4e6-c2c4-4ed1-8bc7-510c41cc8676")
 	)
 	(wire
 		(pts
@@ -831,6 +1094,16 @@
 	)
 	(wire
 		(pts
+			(xy 129.54 78.74) (xy 195.58 78.74)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "d9bb8d86-3cb8-463c-94e8-3a86f273012a")
+	)
+	(wire
+		(pts
 			(xy 113.03 106.68) (xy 113.03 129.54)
 		)
 		(stroke
@@ -838,6 +1111,36 @@
 			(type default)
 		)
 		(uuid "dba12ff8-c586-44de-824a-dc5338e3e59a")
+	)
+	(wire
+		(pts
+			(xy 199.39 93.98) (xy 199.39 118.11)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "e4d870cd-1e76-4055-9b46-02a0d54505b9")
+	)
+	(wire
+		(pts
+			(xy 195.58 109.22) (xy 195.58 115.57)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "e77a32fa-acd2-4df9-9fc7-39d33750bb27")
+	)
+	(wire
+		(pts
+			(xy 129.54 115.57) (xy 195.58 115.57)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "ecf505ca-e066-4da5-b7bd-5a8700cb6679")
 	)
 	(wire
 		(pts
@@ -849,16 +1152,15 @@
 		)
 		(uuid "f3d99c94-e242-4956-9892-a0ae5543ff82")
 	)
-	(hierarchical_label "Interrupt-1"
-		(shape output)
-		(at 113.03 129.54 180)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify right)
+	(wire
+		(pts
+			(xy 129.54 114.3) (xy 129.54 115.57)
 		)
-		(uuid "3f114280-8c4e-410e-8bf6-261ea9a287c0")
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "f46da633-97e4-4f4c-9583-5abd4d5b994b")
 	)
 	(hierarchical_label "MISO"
 		(shape input)
@@ -892,6 +1194,17 @@
 			(justify right)
 		)
 		(uuid "9830e232-2035-42f6-beb7-b03024009f9d")
+	)
+	(hierarchical_label "Interrupt-1"
+		(shape output)
+		(at 110.49 129.54 180)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right)
+		)
+		(uuid "af974e3e-1b60-459a-9add-c055223c40f0")
 	)
 	(hierarchical_label "MOSI"
 		(shape input)
@@ -971,8 +1284,147 @@
 		)
 	)
 	(symbol
+		(lib_id "Device:C")
+		(at 195.58 105.41 0)
+		(mirror y)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "903ecc33-b631-4b9a-8a05-4ae87e547649")
+		(property "Reference" "C1"
+			(at 191.77 104.14 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "100n"
+			(at 191.77 106.68 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" ""
+			(at 194.6148 109.22 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 195.58 105.41 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Unpolarized capacitor"
+			(at 195.58 105.41 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "2"
+			(uuid "cf71f47a-bb35-4920-bf38-43cf4dd1d6cc")
+		)
+		(pin "1"
+			(uuid "bdeb3ea8-6813-475f-8b3e-45772f462a7e")
+		)
+		(instances
+			(project ""
+				(path "/4f1abb7e-5ebf-459c-b427-2e7d0c6488f6/41da4d40-9530-4b0a-94de-2cd3d71fdc96"
+					(reference "C1")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Device:C")
+		(at 199.39 90.17 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "b1e6838e-038f-4262-8194-7e3408bb425a")
+		(property "Reference" "C2"
+			(at 203.2 88.9 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "100n"
+			(at 203.2 91.44 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" ""
+			(at 200.3552 93.98 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 199.39 90.17 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Unpolarized capacitor"
+			(at 199.39 90.17 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "2"
+			(uuid "230e2ed3-98c1-4113-9034-3f3ad456681d")
+		)
+		(pin "1"
+			(uuid "3cd875ad-66a9-476c-9c12-e940749e7326")
+		)
+		(instances
+			(project "Main"
+				(path "/4f1abb7e-5ebf-459c-b427-2e7d0c6488f6/41da4d40-9530-4b0a-94de-2cd3d71fdc96"
+					(reference "C2")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
 		(lib_id "power:GND")
-		(at 128.27 119.38 0)
+		(at 198.12 120.65 0)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -981,7 +1433,7 @@
 		(fields_autoplaced yes)
 		(uuid "b6b92c4b-2e6d-4aca-94bc-1fcbe8a1300d")
 		(property "Reference" "#PWR02"
-			(at 128.27 125.73 0)
+			(at 198.12 127 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -990,7 +1442,7 @@
 			)
 		)
 		(property "Value" "GND"
-			(at 128.27 124.46 0)
+			(at 198.12 125.73 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -998,7 +1450,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 128.27 119.38 0)
+			(at 198.12 120.65 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -1007,7 +1459,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 128.27 119.38 0)
+			(at 198.12 120.65 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -1016,7 +1468,7 @@
 			)
 		)
 		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
-			(at 128.27 119.38 0)
+			(at 198.12 120.65 0)
 			(effects
 				(font
 					(size 1.27 1.27)
