@@ -572,9 +572,9 @@
 			(embedded_fonts no)
 		)
 	)
-	(text "DO NOT USE SDX/SCX\nFOR SPI CONNECTIONS\nTHESE ARE I2C\nCOMMUNICATION\nPROTOCOLS"
+	(text "Do not use SDx/SCx if using SPI \n(datasheet info)"
 		(exclude_from_sim no)
-		(at 91.186 97.028 0)
+		(at 113.538 97.282 0)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -591,26 +591,6 @@
 			)
 		)
 		(uuid "23a4a760-92bf-4181-b7f7-21240d320b99")
-	)
-	(text "MOSI"
-		(exclude_from_sim no)
-		(at 104.902 86.614 0)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-		)
-		(uuid "337548d9-f89c-4f30-b837-aaac7a0132a9")
-	)
-	(text "I2C SERIAL DATA MASTER"
-		(exclude_from_sim no)
-		(at 116.332 95.758 0)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-		)
-		(uuid "3e479606-ad55-4829-8e1d-6dc1c7eb2c3a")
 	)
 	(text "VDD/VDDIO IS USUALLY 3.3 V, BUT CONSULT\nTHE DATASHEET FOR MANUFACTURER RECOMMENDED\nCONFIGURATIONS. YOU MAY REFER TO PAGE (2)\nFOR MORE DETAILED COVERAGE OF THESE PINS"
 		(exclude_from_sim no)
@@ -632,16 +612,6 @@
 		)
 		(uuid "7d4f4be4-1915-4f2a-95d7-ccc0347ef781")
 	)
-	(text "MISO"
-		(exclude_from_sim no)
-		(at 104.648 76.2 0)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-		)
-		(uuid "af4d811c-fd27-4206-98c6-2326d866fe2b")
-	)
 	(text "Your sensor will likely have additional pins.\nFor example, this LSM has 14 pins, but some\nare not included on the symbol/footprint. This\nis because they are NC (No Connect) pins, and \nas their names suggest, should not be connected\nto anything. However, consult your datasheet for\nspecific instructions on extra/NC pins."
 		(exclude_from_sim no)
 		(at 188.722 120.65 0)
@@ -652,36 +622,6 @@
 		)
 		(uuid "b0c76d34-f874-4c85-8edf-0de8c436d31c")
 	)
-	(text "CS is Chip Select. See Page (2)."
-		(exclude_from_sim no)
-		(at 107.95 117.348 0)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-		)
-		(uuid "c22d0d13-f237-4300-9dd8-a21502fc9f8d")
-	)
-	(text "I2C SERIAL CLOCK / \nSPI SERIAL PORT CLOCK"
-		(exclude_from_sim no)
-		(at 68.58 105.918 0)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-		)
-		(uuid "e98b4a57-0d69-4073-af32-ba6fb3b4c9f4")
-	)
-	(text "I2C SERIAL CLOCK MASTER"
-		(exclude_from_sim no)
-		(at 115.57 99.06 0)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-		)
-		(uuid "f67e5dca-208f-40f3-b360-6c76d1428322")
-	)
 	(junction
 		(at 147.32 76.2)
 		(diameter 0)
@@ -690,7 +630,7 @@
 	)
 	(wire
 		(pts
-			(xy 161.29 95.25) (xy 170.18 95.25)
+			(xy 160.02 95.25) (xy 168.91 95.25)
 		)
 		(stroke
 			(width 0)
@@ -720,33 +660,13 @@
 	)
 	(wire
 		(pts
-			(xy 125.73 92.71) (xy 125.73 76.2)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "22004dc8-6363-470b-873a-9320946ef3f2")
-	)
-	(wire
-		(pts
-			(xy 115.57 102.87) (xy 129.54 102.87)
+			(xy 125.73 102.87) (xy 129.54 102.87)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
 		(uuid "3cf1af71-980e-4ad4-a013-344ead5867ea")
-	)
-	(wire
-		(pts
-			(xy 115.57 102.87) (xy 115.57 86.36)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "45864aaa-e93d-4599-9358-723be78f1c22")
 	)
 	(wire
 		(pts
@@ -770,43 +690,13 @@
 	)
 	(wire
 		(pts
-			(xy 107.95 86.36) (xy 115.57 86.36)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "8e695fc3-b079-4e85-b3df-2024af96a025")
-	)
-	(wire
-		(pts
-			(xy 107.95 107.95) (xy 107.95 115.57)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "938989ea-cd94-4800-a310-f9cb7a134f69")
-	)
-	(wire
-		(pts
-			(xy 170.18 95.25) (xy 170.18 101.6)
+			(xy 168.91 95.25) (xy 168.91 101.6)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
 		(uuid "99673e5e-8b27-41bd-a802-f92c8aac94f6")
-	)
-	(wire
-		(pts
-			(xy 125.73 92.71) (xy 129.54 92.71)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "9f4260a6-a903-430e-8a1a-99a6eb3fa0f9")
 	)
 	(wire
 		(pts
@@ -820,7 +710,7 @@
 	)
 	(wire
 		(pts
-			(xy 81.28 105.41) (xy 129.54 105.41)
+			(xy 125.73 105.41) (xy 129.54 105.41)
 		)
 		(stroke
 			(width 0)
@@ -840,7 +730,7 @@
 	)
 	(wire
 		(pts
-			(xy 107.95 76.2) (xy 125.73 76.2)
+			(xy 125.73 92.71) (xy 129.54 92.71)
 		)
 		(stroke
 			(width 0)
@@ -860,13 +750,57 @@
 	)
 	(wire
 		(pts
-			(xy 170.18 101.6) (xy 177.8 101.6)
+			(xy 168.91 101.6) (xy 177.8 101.6)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
 		(uuid "fdd0f53b-685b-405a-8567-b331f87923b5")
+	)
+	(hierarchical_label "CLK"
+		(shape input)
+		(at 125.73 105.41 180)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right)
+		)
+		(uuid "6c26e36a-2130-4deb-a4e8-36aa23af4781")
+	)
+	(hierarchical_label "LSM6DS3_MISO"
+		(shape output)
+		(at 125.73 92.71 180)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right)
+		)
+		(uuid "6f2c6ce8-4b89-4710-a1ed-66f7f9ccca0b")
+	)
+	(hierarchical_label "LSM6DS3_CS"
+		(shape input)
+		(at 107.95 107.95 180)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right)
+		)
+		(uuid "7080e5f1-c0c0-4592-91aa-531f7d503d23")
+	)
+	(hierarchical_label "LSM6DS3_MOSI"
+		(shape input)
+		(at 125.73 102.87 180)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right)
+		)
+		(uuid "c8bdddd8-1ad2-4c02-87d9-8c37317c8665")
 	)
 	(symbol
 		(lib_id "Sensor_Motion:LSM6DS3")
