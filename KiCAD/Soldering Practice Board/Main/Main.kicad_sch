@@ -1832,6 +1832,48 @@
 		)
 	)
 	(sheet
+		(at 201.93 101.6)
+		(size 12.7 10.16)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(stroke
+			(width 0.1524)
+			(type solid)
+		)
+		(fill
+			(color 0 0 0 0.0000)
+		)
+		(uuid "218572a4-dbfe-40bf-ae66-f0dc5381f35c")
+		(property "Sheetname" "BMP581"
+			(at 201.93 100.8884 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left bottom)
+			)
+		)
+		(property "Sheetfile" "BMP581.kicad_sch"
+			(at 201.93 112.3446 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left top)
+			)
+		)
+		(instances
+			(project "Main"
+				(path "/4f1abb7e-5ebf-459c-b427-2e7d0c6488f6"
+					(page "5")
+				)
+			)
+		)
+	)
+	(sheet
 		(at 163.83 77.47)
 		(size 12.7 24.13)
 		(exclude_from_sim no)
